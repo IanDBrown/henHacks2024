@@ -1,4 +1,5 @@
 import "../css/App.css";
+import image from "../assets/robot-image.png";
 export default function Homepage() {
 	return (
 		<div className="container">
@@ -7,10 +8,7 @@ export default function Homepage() {
 			</div>
 			<h1>An ethical AI!</h1>
 			<div className="imageContainer">
-				<img
-					src="../assets/robot-image.png"
-					alt="Image of a green friendly robot"
-				/>
+				<img src={image} alt="Image of a green friendly robot" />
 			</div>
 		</div>
 	);
