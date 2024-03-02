@@ -1,28 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans+Khmer:wght@100..900&family=Signika+Negative:wght@300..700&display=swap");
 
-:root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
-	color-scheme: light dark;
-	color: white;
-	/* background-color: #242424; */
-	background-color: #07560c;
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+body {
+	background-color: rgb(12, 105, 12);
 }
 
 .container {
 	width: 100%;
-	border: 2px solid white;
 	box-sizing: border-box;
+	/* border: 1px solid white; */
+	color: white;
 	padding: 10px;
-	margin-top: 15%;
+	margin-top: 20%;
 }
 
-h1 span {
-	font-size: 70px;
+.container .title h1 {
 	font-family: "Noto Sans Khmer", sans-serif;
+	font-size: 70px;
+}
+
+.container h1 {
+	margin-top: -50px;
+	font-family: "DM Sans", sans-serif;
 }
