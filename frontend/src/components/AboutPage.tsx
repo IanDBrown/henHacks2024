@@ -34,13 +34,13 @@ export default function AboutPage() {
 				concepts.
 			</p>
 
-			<h2>Tailored Learning Paths</h2>
+			<h2>Tailored Learning</h2>
 			<p>
-				We understand that Math can be challenging, but we believe it shouldn't
-				be a barrier to your academic or personal growth. Intelli Learn adapts
-				to your individual learning pace, ensuring that you can grasp concepts
-				at a comfortable speed, build confidence, and achieve mastery in various
-				mathematical disciplines.
+				Is your child a visual learner? Are you tired of having to waste paper
+				drawing out your child's math problems for them to understand? Check out
+				or AI arithmetic word problem image generator! Simply enter a basic word
+				problem and watch the AI API generate visual images of the word problem
+				broken down for your child to understand!
 			</p>
 
 			<h2>Empowering Learners Worldwide</h2>
