@@ -1,7 +1,16 @@
-import "../css/App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./Homepage";
+import QuestionPage from "./QuestionPage";
 
 function App() {
-	return <h1>Hello, World!</h1>;
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Homepage />} />
+				<Route path="/quiz" element={<QuestionPage />} />
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;

@@ -1,24 +1,37 @@
+import "../css/QuestionPage.css"
 const QuestionPage = () => {
-    
+    console.log(math);
     return ( 
-        <div>
+        <div className="questionCard">
+            <h1 className="questionHeader">Question:</h1>
             <form>
-            <label>
-                <input type="radio" name="react-tips" value="option1" className="form-check-input"/>
-                Option 1
-            </label> <br/>
-            <label>
-                <input type="radio" name="react-tips" value="option2" className="form-check-input"/>
-                Option 2
-            </label> <br/>
-            <label>
-                <input type="radio" name="react-tips" value="option3" className="form-check-input"/>
-                Option 3
-            </label> <br/>
-            <label>
-                <input type="radio" name="react-tips" value="option4" className="form-check-input"/>
-                Option 4
-            </label> <br/>
+                <div className="multipleChoiceDiv">
+                    <label className="multipleChoiceLabel">
+                    <input className="multipleChoice" type="radio" name="react-tips" value="option1"/>
+                    Option 1
+                    </label>
+                </div>
+
+            <div className="multipleChoiceDiv">
+                <label className="multipleChoiceLabel">
+                    <input className="multipleChoice" type="radio" name="react-tips" value="option2"/>
+                    Option 2
+                </label>
+            </div>
+
+            <div className="multipleChoiceDiv">
+                <label className="multipleChoiceLabel">
+                    <input className="multipleChoice" type="radio" name="react-tips" value="option3"/>
+                    Option 3
+                </label> 
+            </div>
+
+            <div className="multipleChoiceDiv">
+                <label className="multipleChoiceLabel">
+                    <input className="multipleChoice" type="radio" name="react-tips" value="option4"/>
+                    Option 4
+                </label> 
+            </div>
             </form>
         </div>
      );
