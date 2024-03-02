@@ -1,6 +1,5 @@
 import "../css/QuestionPage.css"
 const QuestionPage = () => {
-    console.log(math);
     return ( 
         <div className="questionCard">
             <h1 className="questionHeader">Question:</h1>
