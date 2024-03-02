@@ -3,10 +3,10 @@ import "../css/App.css";
 export default function Homepage() {
 	return (
 		<div className="container">
-			<h1>
-				<span>Intelli Learn</span>
-			</h1>
-			<h1>Using AI, but ethically!</h1>
+			<div className="title">
+				<h1>Intelli Learn</h1>
+			</div>
+			<h1>An ethical AI!</h1>
 		</div>
 	);
 }
