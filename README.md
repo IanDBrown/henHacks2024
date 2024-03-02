@@ -1,7 +1,7 @@
 ## Developers:
 
 Hairum Qureshi
-Mohammed Touheed Patel
-Logan Ponik
-Ian Brown
+,Mohammed Touheed Patel
+,Logan Ponik
+,Ian Brown
 
