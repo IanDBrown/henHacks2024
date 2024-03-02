@@ -1,3 +1,28 @@
-h1 {
-	color: "white";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap");
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	color-scheme: light dark;
+	color: white;
+	/* background-color: #242424; */
+	background-color: #07560c;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+	width: 100%;
+	border: 2px solid white;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-top: 15%;
+}
+
+h1 span {
+	font-size: 70px;
+	font-family: "Noto Sans Khmer", sans-serif;
 }
