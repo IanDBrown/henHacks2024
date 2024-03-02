@@ -1,4 +1,4 @@
 ## Developers:
 
-Hairum Qureshi
+Hairum Qureshi \
 Logan Ponik
