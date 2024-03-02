@@ -1,3 +1,3 @@
 ## Developers:
 
-Hairum Qureshi Logan Ponik
+Hairum Qureshi, Mohammed Touheed Patel, Logan Ponik, Ian Brown
