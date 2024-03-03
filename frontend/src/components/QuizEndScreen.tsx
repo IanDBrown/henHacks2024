@@ -8,7 +8,7 @@ const QuizEndScreen = () => {
     //const sum = location.state?.sum || 0; // Default value is 0 if 'sum' is not present
     return ( 
         
-        <h1>Score:{sum}</h1>
+        <h1>Score:</h1>
      );
 }
  
