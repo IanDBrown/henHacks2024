@@ -56,6 +56,13 @@ body {
 	transition: 0.3s;
 }
 
+.container button:active {
+	cursor: pointer;
+	background-color: rgb(11, 79, 11);
+	border: 2px solid lime;
+	transition: 0.3s;
+}
+
 .container .subjectSelect {
 	padding: 10px;
 }
@@ -80,18 +87,19 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .fade-in {
-  animation: fadeIn 1s ease-in-out;
+	animation: fadeIn 1s ease-in-out;
 }
 
 .glowing-text {
-  color: #fff; /* White text color */
-  text-shadow: 0 0 3px #fff, 0 0 6px #20ec50, 0 0 9px #fcfef7;
+	color: #fff; /* White text color */
+	text-shadow: 0 0 3px #fff, 0 0 6px #20ec50, 0 0 9px #fcfef7;
 }
-
-
-
