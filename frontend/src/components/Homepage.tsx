@@ -6,10 +6,11 @@ export default function Homepage() {
 			<div className="title">
 				<h1>Intelli Learn</h1>
 			</div>
-			<h1>An ethical AI!</h1>
+			<h1>An ethical homework helping AI!</h1>
 			<div className="imageContainer">
 				<img src={image} alt="Image of a green friendly robot" />
 			</div>
+			<button>CHOOSE A SUBJECT!</button>
 		</div>
 	);
 }

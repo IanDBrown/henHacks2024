@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans+Khmer:wght@100..900&family=Signika+Negative:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 
 body {
 	background-color: rgb(12, 105, 12);
@@ -30,4 +31,24 @@ body {
 	transform: scale(1.5, 1.5);
 	float: right;
 	margin: -8.5% 20% 0 0;
+}
+
+.container button {
+	width: 34%;
+	font-size: 17px;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	border: 2px solid rgb(9, 149, 9);
+	background-color: rgb(28, 87, 28);
+	color: white;
+	font-family: "Noto Sans KR", sans-serif;
+	transition: 0.3s;
+}
+
+.container button:hover {
+	cursor: pointer;
+	background-color: rgb(30, 117, 30);
+	border: 2px solid lime;
+	transition: 0.3s;
 }
