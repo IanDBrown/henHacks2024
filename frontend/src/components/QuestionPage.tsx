@@ -10,9 +10,9 @@ const QuestionPage = () => {
 
     function checkAnswer (){
         if(selectedAnswer === math.Math.LevelOne[0].correct){
-            console.log("Correct")
+            console.log("Correct");
         }else{
-            console.log("Wrong")            
+            console.log("Wrong");            
         }
     }
 
