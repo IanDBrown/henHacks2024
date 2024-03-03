@@ -1,7 +1,7 @@
 import "../css/QuestionPage.css"
 import math from "../assets/questions.json"
 import { useState } from "react"
-
+var sum=0;
 const QuestionPage = () => {
     let selectedAnswer = ""
     const [hiddenClass, sethiddenClass] = useState("hidden");
@@ -26,6 +26,7 @@ const QuestionPage = () => {
             if(selectedAnswer === math.Math[scoreLevel][randomNumber].correct){
                 setAmountCorrect(amountCorrect + 1)
                 setCorrectOrNot("Correct")
+                sum=sum+1
             }else{ 
                 setCorrectOrNot("Wrong")     
             }
@@ -107,5 +108,4 @@ const QuestionPage = () => {
         </div>
     )
 }
- 
 export default QuestionPage;
