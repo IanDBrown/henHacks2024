@@ -20,7 +20,9 @@ const Homepage: React.FC = () => {
 			<div className="imageContainer">
 				<img src={image} alt="Image of a green friendly robot" />
 			</div>
-			<button onClick={() => navigate("/quiz")}>Take a Quiz!</button>
+			<button onClick={() => navigate("/homework-helper")}>
+				Click here to try out our AI homework helper!
+			</button>
 		</div>
 	);
 };
