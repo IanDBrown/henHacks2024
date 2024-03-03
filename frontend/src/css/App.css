@@ -45,10 +45,6 @@ body {
 	color: rgb(164, 151, 151);
 }
 
-homepage {
-	color: white;
-}
-
 .navbar {
 	display: flex;
 	background-color: #333;
