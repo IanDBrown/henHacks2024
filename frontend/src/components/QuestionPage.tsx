@@ -1,9 +1,10 @@
 import "../css/QuestionPage.css";
 import math from "../assets/questions.json";
 import { useState } from "react";
-var sum = 0;
+
 const QuestionPage = () => {
 	let selectedAnswer = "";
+	let sum = 0;
 	const [hiddenClass, sethiddenClass] = useState("hidden");
 	const [correctOrNot, setCorrectOrNot] = useState("");
 	const [scoreLevel, setScoreLevel] = useState(2);
