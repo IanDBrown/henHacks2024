@@ -6,7 +6,7 @@
 .questionCard{
     margin-left: 10%;
     width: 80%;
-    height: 400px;
+    height: 500px;
     background-color: bisque;
 }
 
@@ -17,4 +17,18 @@
 .multipleChoiceDiv{
     margin-bottom: 10px;
     padding-left: 45%;
+}
+
+.sumbitButton{
+    width: 10%;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    background-color: rgb(0, 102, 255);
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 45%;
 }
