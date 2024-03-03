@@ -102,4 +102,5 @@ const WolframAlphaExample: React.FC = () => {
 		</div>
 	);
 };
+
 export default WolframAlphaExample;
