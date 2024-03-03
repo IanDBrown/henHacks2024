@@ -4,18 +4,21 @@ import { useState } from "react"
 
 const QuestionPage = () => {
     const [selectedAnswer, setSelectedAnswer] = useState("");
-    let scoreLevel : number = 2;
+    const [hiddenClass, sethiddenClass] = useState("hidden");
+    const [correctOrNot, setCorrectOrNot] = useState("");
+    
+    let scoreLevel : number =2;
     let allOptions: String = math.Math[scoreLevel][0].options
     let answerArray: Array<string> = allOptions.split(" , ")
-    console.log(math.Math[scoreLevel][0].options)
     let rationale : String = math.Math[scoreLevel][0].Rationale
 
     function checkAnswer (){
+        sethiddenClass("shown")
         if(selectedAnswer === math.Math[scoreLevel][0].correct){
-            console.log("Correct");
+            setCorrectOrNot("Correct")
             scoreLevel += 1
-        }else{
-            console.log("Wrong");            
+        }else{ 
+            setCorrectOrNot("Wrong")     
             scoreLevel -= 1
         }
     }
@@ -58,14 +61,15 @@ const QuestionPage = () => {
                 </label> 
             </div>
             </form>
-            <div className="hidden" id="rationale">
+            <div className={`rationale ${hiddenClass}`} id="rationale">
+                {correctOrNot} <br/>
                 {rationale}
             </div>
             <div>
                 <button className="sumbitButton" onClick={()=>checkAnswer()}>Submit</button>
             </div>
         </div>
-     );
+    )
 }
  
 export default QuestionPage;
