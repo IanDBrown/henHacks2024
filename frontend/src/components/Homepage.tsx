@@ -5,7 +5,6 @@ export default function Homepage() {
 		<div className="container">
 			<div className="title">
 				<h1>Intelli Learn</h1>
-				<div>
 					<div className="subjectSelect">
 						<select>
 							<option value="0">Select a subject:</option>
@@ -13,7 +12,6 @@ export default function Homepage() {
 							<option value="2">Math</option>
 						</select>
 					</div>
-				</div>
 			</div>
 			<h1>An ethical homework helping AI!</h1>
 			<div className="imageContainer">
