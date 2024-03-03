@@ -5,13 +5,7 @@ export default function Homepage() {
 		<div className="container">
 			<div className="title">
 				<h1>Intelli Learn</h1>
-					<div className="subjectSelect">
-						<select>
-							<option value="0">Select a subject:</option>
-							<option value="1">Reading</option>
-							<option value="2">Math</option>
-						</select>
-					</div>
+				<button>Take a test!</button>
 			</div>
 			<h1>An ethical homework helping AI!</h1>
 			<div className="imageContainer">
