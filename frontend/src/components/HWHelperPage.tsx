@@ -19,6 +19,7 @@ const WolframAlphaExample: React.FC = () => {
 	const [userQuery, setUserQuery] = useState<string>("");
 	const [result, setResult] = useState<ResponseType | null>(null);
 	const [loading, setLoading] = useState(false);
+	const [error, setError] = useState<string | null>(null); // Add error state
 
 	const fetchData = async (query: string) => {
 		const url = "https://api.wolframalpha.com/v2/query";
@@ -27,6 +28,7 @@ const WolframAlphaExample: React.FC = () => {
 
 		try {
 			setLoading(true);
+			setError(null); // Reset error before fetching
 
 			const response = await fetch(
 				`https://cors-anywhere.herokuapp.com/${url}?appid=${apiKey}&input=${input}&output=json`,
@@ -37,10 +39,18 @@ const WolframAlphaExample: React.FC = () => {
 				throw new Error("Network response was not ok");
 			}
 
-			const data: ResponseType = await response.json();
+			const data = await response.json();
+
+			if (!data.queryresult.success) {
+				throw new Error("Wolfram Alpha query was not successful");
+			}
+
 			setResult(data);
 		} catch (error) {
 			console.error("Fetch error:", error);
+			setError(
+				"Sorry, there was a problem fulfilling your request. Please try another problem."
+			);
 		} finally {
 			setLoading(false);
 		}
@@ -86,21 +96,27 @@ const WolframAlphaExample: React.FC = () => {
 					</div>
 				</form>
 			</div>
-			{/* <div>{result?}</div> */}
-			<div>
-				{result &&
-					result.queryresult.pods.map(pod =>
-						pod.subpods.map((subpod, subIndex) => (
-							<div key={subIndex} className={helper_css.imageContainer}>
-								<img
-									src={subpod.img.src}
-									alt={subpod.img.alt}
-									className={helper_css.resultImage}
-								/>
-							</div>
-						))
-					)}
-			</div>
+			{/* Display error message if exists */}
+			{error || loading ? (
+				<div className={helper_css.contentDisplay}>
+					<h1>{error}</h1>
+				</div>
+			) : (
+				<div className={helper_css.contentDisplay}>
+					{result &&
+						result.queryresult.pods.map(pod =>
+							pod.subpods.map((subpod, subIndex) => (
+								<div key={subIndex} className={helper_css.imageContainer}>
+									<img
+										src={subpod.img.src}
+										alt={subpod.img.alt}
+										className={helper_css.resultImage}
+									/>
+								</div>
+							))
+						)}
+				</div>
+			)}
 		</div>
 	);
 };

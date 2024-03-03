@@ -11,6 +11,15 @@
 	text-align: center;
 }
 
+.contentDisplay {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+	font-family: "DM Sans", sans-serif;
+	color: rgb(0, 48, 21);
+}
+
 /* Styles for the header, centers the text and applies font styling */
 .header {
 	text-align: center; /* Centers the text */
