@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../css/App.css";
+import { tailspin } from "ldrs";
+
+tailspin.register();
 
 interface ResponseType {
 	queryresult: {
@@ -22,7 +25,6 @@ const WolframAlphaExample: React.FC = () => {
 		const input = encodeURIComponent(query);
 
 		try {
-			console.log("query", query);
 			setLoading(true);
 
 			const response = await fetch(
@@ -49,59 +51,32 @@ const WolframAlphaExample: React.FC = () => {
 
 	return (
 		<div>
-			<div
-				style={{ display: "flex", justifyContent: "center", marginTop: "1rem" }}
-			>
+			<div>
 				<h1>Math Homework Helper for Visual Learners</h1>
 				<p>Provides live images and solutions to math based word problems!</p>
 			</div>
-			<div style={{ display: "flex", justifyContent: "center" }}>
-				<form
-					onSubmit={handleSubmit}
-					style={{
-						display: "flex",
-						flexDirection: "column",
-						alignItems: "center"
-					}}
-				>
+			<div>
+				<form onSubmit={handleSubmit}>
 					<input
 						type="text"
 						value={userQuery}
 						onChange={e => setUserQuery(e.target.value)}
 						placeholder="Enter your question here..."
-						style={{
-							marginBottom: "1rem",
-							width: "500%", // Adjusts the width of the textbox
-							height: "2rem", // Adjusts the height of the textbox
-							padding: "0.5rem", // Adds some padding inside the textbox for better text visibility
-							fontSize: "1rem" // Increases the font size for better readability
-						}}
 					/>
 
-					{loading && <h1>LOADING...</h1>}
+					{loading && (
+						<l-tailspin
+							size="40"
+							stroke="5"
+							speed="0.9"
+							color="black"
+						></l-tailspin>
+					)}
 
-					<button
-						type="submit"
-						style={{
-							width: "100px", // Adjusts the width of the button
-							height: "50px", // Adjusts the height of the button
-							padding: "10px", // Adds padding inside the button for a larger clickable area
-							fontSize: "1rem", // Increases the font size for better readability
-							cursor: "pointer", // Changes the cursor to a pointer when hovering over the button
-							borderRadius: "5px" // Adds rounded corners to the button (optional)
-						}}
-					>
-						Submit
-					</button>
+					<button type="submit">Submit</button>
 				</form>
 			</div>
-			<div
-				style={{
-					display: "flex",
-					flexDirection: "column",
-					alignItems: "center"
-				}}
-			>
+			<div>
 				{result &&
 					result.queryresult.pods.map(pod =>
 						pod.subpods.map((subpod, subIndex) => (
