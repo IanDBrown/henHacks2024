@@ -9,6 +9,8 @@ const QuestionPage = () => {
     const [scoreLevel, setScoreLevel] = useState(2);
     const [showButton, setShowButton] = useState(true);
     const [randomNumber, setRandomNumber] = useState(0);
+    const [questionsAnswered, setQuestionsAnswered] = useState(1);
+    const [amountCorrect, setAmountCorrect] = useState(0);
     
     let allOptions: String = math.Math[scoreLevel][randomNumber].options
     let question: String = math.Math[scoreLevel][randomNumber].Problem;
@@ -19,14 +21,21 @@ const QuestionPage = () => {
         sethiddenClass("shown")
         setShowButton(false)
         setRationale(math.Math[scoreLevel][randomNumber].Rationale)
-        if(selectedAnswer === math.Math[scoreLevel][randomNumber].correct){
-            setCorrectOrNot("Correct")
-        }else{ 
-            setCorrectOrNot("Wrong")     
+
+        if(questionsAnswered < 10){
+            if(selectedAnswer === math.Math[scoreLevel][randomNumber].correct){
+                setAmountCorrect(amountCorrect + 1)
+                setCorrectOrNot("Correct")
+            }else{ 
+                setCorrectOrNot("Wrong")     
+            }
+        }else{
+            window.location.href = "http://localhost:5173/";
         }
     }
 
     function nextQuestion(){
+        setQuestionsAnswered(questionsAnswered + 1)
         setShowButton(true)
         if(correctOrNot === "Correct"){
             if(scoreLevel < 4){
@@ -50,6 +59,7 @@ const QuestionPage = () => {
 
     return ( 
         <div className="questionCard">
+            <h3>Question {questionsAnswered} of 10</h3>
             <h1 className="questionHeader">{question}</h1>
             <form>
                 <div className="multipleChoiceDiv">
