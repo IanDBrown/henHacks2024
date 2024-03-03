@@ -4,6 +4,7 @@ import AboutPage from "./AboutPage";
 import NavBar from "./NavBar";
 import HWHelperPage from "./HWHelperPage";
 import QuestionPage from "./QuestionPage";
+import QuizEndScreen from "./quizEndScreen";
 
 function App() {
 	return (
@@ -15,7 +16,7 @@ function App() {
 				<Route path="/about" element={<AboutPage />} />
 				<Route path="/homework-helper" element={<HWHelperPage />} />
 				<Route path="/quiz" element={<QuestionPage />} />
-
+				<Route path="/quizResults" element={<QuizEndScreen />} />
 				{}
 			</Routes>
 		</BrowserRouter>
