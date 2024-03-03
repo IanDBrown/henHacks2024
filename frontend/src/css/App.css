@@ -52,3 +52,50 @@ body {
 	border: 2px solid lime;
 	transition: 0.3s;
 }
+
+.container .subjectSelect {
+	padding: 10px;
+
+	.homepage {
+		color: #f4f3f3;
+		font-size: 24px;
+	}
+
+	body {
+		color: rgb(164, 151, 151);
+	}
+
+	homepage {
+		color: white;
+	}
+
+	.navbar {
+		display: flex;
+		background-color: #333;
+		padding: 1rem;
+		justify-content: center;
+	}
+
+	/* Styling for each nav item */
+	.nav-item {
+		color: white; /* Light text color for contrast */
+		text-decoration: none; /* Remove underline from links */
+		margin: 0 1rem; /* Space out the nav items */
+		font-size: 1.2rem; /* Slightly larger font size */
+	}
+
+	/* Change color on hover for visual feedback */
+	.nav-item:hover {
+		color: #ddd;
+	}
+
+	.homework-helper-text {
+		color: #f4f3f3;
+		font-size: 24px;
+	}
+
+	.about {
+		color: #f4f3f3;
+		font-size: 24px;
+	}
+}
