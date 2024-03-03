@@ -10,7 +10,9 @@ const QuestionPage = () => {
 
     function checkAnswer (){
         if(selectedAnswer === math.Math.LevelOne[0].correct){
-            console.log("correct")
+            console.log("Correct")
+        }else{
+            console.log("Wrong")            
         }
     }
 
@@ -51,10 +53,10 @@ const QuestionPage = () => {
                     {answerArray[4]}
                 </label> 
             </div>
-            <div>
-                <input className="sumbitButton" type="submit" value="Submit" onClick={()=>checkAnswer()}></input>
-            </div>
             </form>
+            <div>
+                <button className="sumbitButton" onClick={()=>checkAnswer()}>Submit</button>
+            </div>
         </div>
      );
 }
