@@ -11,7 +11,7 @@ export default function Homepage() {
 			<div className="imageContainer">
 				<img src={image} alt="Image of a green friendly robot" />
 			</div>
-			<button>CHOOSE A SUBJECT!</button>
+			{/* <button>CHOOSE A SUBJECT!</button> */}
 		</div>
 	);
 }
