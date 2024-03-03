@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	display: flex;
+	background-color: #333;
+	padding: 1rem;
+	justify-content: center;
+}
+
+/* Styling for each nav item */
+.navItem {
+	color: white; /* Light text color for contrast */
+	text-decoration: none; /* Remove underline from links */
+	margin: 0 1rem; /* Space out the nav items */
+	font-size: 1.2rem; /* Slightly larger font size */
+}
+
+/* Change color on hover for visual feedback */
+.navItem:hover {
+	color: #ddd;
+}
+
+.homework-helper-text {
+	color: #f4f3f3;
+	font-size: 24px;
+}
