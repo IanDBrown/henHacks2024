@@ -36,6 +36,7 @@ const WolframAlphaExample: React.FC = () => {
 			if (!response.ok) {
 				throw new Error("Network response was not ok");
 			}
+
 			const data: ResponseType = await response.json();
 			setResult(data);
 		} catch (error) {
@@ -69,22 +70,23 @@ const WolframAlphaExample: React.FC = () => {
 							onChange={e => setUserQuery(e.target.value)}
 							placeholder="Enter your question here..."
 						/>
-
-						{loading && (
-							<l-tailspin
-								size="40"
-								stroke="5"
-								speed="0.9"
-								color="black"
-							></l-tailspin>
-						)}
-
 						<button type="submit" className={helper_css.submitButton}>
-							Submit
+							Learn!
 						</button>
+						{loading && (
+							<div className={helper_css.loadingSpinner}>
+								<l-tailspin
+									size="55"
+									stroke="5"
+									speed="0.9"
+									color="lime"
+								></l-tailspin>
+							</div>
+						)}
 					</div>
 				</form>
 			</div>
+			{/* <div>{result?}</div> */}
 			<div>
 				{result &&
 					result.queryresult.pods.map(pod =>
