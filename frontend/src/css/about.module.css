@@ -1,0 +1,12 @@
+.about {
+	color: #f4f3f3;
+	font-size: 24px;
+	font-family: "DM Sans", sans-serif;
+	padding-left: 100px; /* Add padding to the left */
+	padding-right: 100px; /* Add padding to the right */
+}
+
+.about h1,
+.about h2 {
+	text-align: center;
+}
