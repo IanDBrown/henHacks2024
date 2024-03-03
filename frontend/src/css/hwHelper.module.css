@@ -81,4 +81,12 @@
 	display: block; /* Ensures the input field is treated as a block-level element */
 	font-family: Dm Sans, sans-serif;
 	outline: none;
+	border: 2px solid green;
+	border-radius: 5px;
+}
+
+.queryInput input:focus {
+	box-shadow: 0 0 10px rgb(13, 196, 13);
+	border: 2px solid rgb(13, 193, 13);
+	transition: 0.3s;
 }
