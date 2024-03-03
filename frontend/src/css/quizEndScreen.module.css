@@ -1,0 +1,17 @@
+.resultCard{
+    font-family: "DM Sans", sans-serif;
+    margin: auto;
+    margin-top: 15vh;
+    width: 45%;
+    height: 45vh;
+    background-color: #127112;
+}
+
+.firstHeader{
+    padding-top: 10%;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20%;
+}

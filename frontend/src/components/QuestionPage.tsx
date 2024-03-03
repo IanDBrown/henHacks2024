@@ -1,10 +1,12 @@
+<<<<<<< HEAD
+import "../css/questions.module.css"
+=======
+>>>>>>> ed956d3f379fb13f267d119dbed2633f69026722
 import math from "../assets/questions.json";
 import { useState } from "react";
-import questions_css from "../css/questions.module.css";
 
 const QuestionPage = () => {
 	let selectedAnswer = "";
-	let sum = 0;
 	const [hiddenClass, sethiddenClass] = useState("hidden");
 	const [correctOrNot, setCorrectOrNot] = useState("");
 	const [scoreLevel, setScoreLevel] = useState(2);
@@ -29,13 +31,12 @@ const QuestionPage = () => {
 			if (selectedAnswer === math.Math[scoreLevel][randomNumber].correct) {
 				setAmountCorrect(amountCorrect + 1);
 				setCorrectOrNot("Correct");
-				sum = sum + 1;
-				console.log(sum);
 			} else {
 				setCorrectOrNot("Wrong");
 			}
-			localStorage.setItem("quizSum", sum.toString());
 		} else {
+			localStorage.setItem('score', JSON.stringify(amountCorrect));
+			localStorage.setItem('level', JSON.stringify(scoreLevel));
 			window.location.href = "http://localhost:5173/quizResults";
 		}
 	}
