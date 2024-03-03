@@ -91,7 +91,6 @@ const WolframAlphaExample: React.FC = () => {
 						))
 					)}
 			</div>
->>>>>>> main
 		</div>
 	);
 };
