@@ -4,7 +4,7 @@ import AboutPage from "./AboutPage";
 import NavBar from "./NavBar";
 import HWHelperPage from "./HWHelperPage";
 import QuestionPage from "./QuestionPage";
-import QuizEndScreen from "./quizEndScreen";
+import QuizEndScreen from "./QuizEndScreen";
 
 function App() {
 	return (
