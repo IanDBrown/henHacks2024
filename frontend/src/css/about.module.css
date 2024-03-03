@@ -23,4 +23,10 @@
   .fadeIn {
 	animation: fadeIn 1s ease-in-out;
   }
+
+  .glowing-text {
+	color: #fff; /* White text color */
+	text-shadow: 0 0 3px #fff, 0 0 6px #20ec50, 0 0 9px #fcfef7;
+  }
+  
   
