@@ -1,7 +1,3 @@
-body {
-	overflow: scroll;
-}
-
 .about {
 	color: #f4f3f3;
 	font-size: 24px;
@@ -14,3 +10,23 @@ body {
 .about h2 {
 	text-align: center;
 }
+
+@keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  .fadeIn {
+	animation: fadeIn 1s ease-in-out;
+  }
+
+  .glowing-text {
+	color: #fff; /* White text color */
+	text-shadow: 0 0 3px #fff, 0 0 6px #20ec50, 0 0 9px #fcfef7;
+  }
+  
+  

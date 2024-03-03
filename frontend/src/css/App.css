@@ -8,7 +8,6 @@ body {
 		rgb(19, 110, 67),
 		rgb(9, 185, 103)
 	);
-	/*overflow: hidden;*/
 }
 
 .container {
@@ -17,7 +16,7 @@ body {
 	/* border: 1px solid white; */
 	color: white;
 	padding: 10px;
-	margin: 15% 0 0 10%;
+	margin: 14.5% 0 0 10%;
 	position: absolute;
 }
 
@@ -79,3 +78,20 @@ body {
 	color: #f4f3f3;
 	font-size: 24px;
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.glowing-text {
+  color: #fff; /* White text color */
+  text-shadow: 0 0 3px #fff, 0 0 6px #20ec50, 0 0 9px #fcfef7;
+}
+
+
+
