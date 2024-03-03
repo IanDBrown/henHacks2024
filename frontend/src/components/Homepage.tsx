@@ -3,10 +3,10 @@ import image from "../assets/robot-image.png";
 
 export default function Homepage() {
     return (
-        <div className="container homepage"> {}
+        <div className="container homepage">
             <div className="title">
                 <h1>Intelli Learn</h1>
-                <div>
+                <div className="controls">
                     <div className="subjectSelect">
                         <select>
                             <option value="0">Select a subject:</option>
@@ -14,6 +14,7 @@ export default function Homepage() {
                             <option value="2">Math</option>
                         </select>
                     </div>
+                    <button>Take a test!</button> {/* Added the button here */}
                 </div>
             </div>
             <h1>An ethical homework helping AI!</h1>
@@ -23,4 +24,3 @@ export default function Homepage() {
         </div>
     );
 }
-
