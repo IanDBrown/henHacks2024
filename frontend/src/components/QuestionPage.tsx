@@ -2,6 +2,7 @@ import "../css/QuestionPage.css"
 import math from "../assets/questions.json"
 import { useState } from "react"
 
+//comment
 const QuestionPage = () => {
     const [selectedAnswer, setSelectedAnswer] = useState("");
     let allOptions: String = math.Math.LevelOne[0].options
