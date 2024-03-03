@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans+Khmer:wght@100..900&family=Signika+Negative:wght@300..700&display=swap");
 
@@ -35,46 +34,43 @@ body {
 
 .container .subjectSelect {
 	padding: 10px;
+}
 
 .homepage {
-  color: #f4f3f3; 
-  font-size: 24px; 
+	color: #f4f3f3;
+	font-size: 24px;
 }
 
-body{
-  color:rgb(164, 151, 151);
-}
-
-homepage{
-  color: white;
+body {
+	color: rgb(164, 151, 151);
 }
 
 .navbar {
-  display: flex; 
-  background-color: #333; 
-  padding: 1rem; 
-  justify-content: center; 
+	display: flex;
+	background-color: #333;
+	padding: 1rem;
+	justify-content: center;
 }
 
 /* Styling for each nav item */
 .nav-item {
-  color: white; /* Light text color for contrast */
-  text-decoration: none; /* Remove underline from links */
-  margin: 0 1rem; /* Space out the nav items */
-  font-size: 1.2rem; /* Slightly larger font size */
+	color: white; /* Light text color for contrast */
+	text-decoration: none; /* Remove underline from links */
+	margin: 0 1rem; /* Space out the nav items */
+	font-size: 1.2rem; /* Slightly larger font size */
 }
 
 /* Change color on hover for visual feedback */
 .nav-item:hover {
-  color: #ddd;
+	color: #ddd;
 }
 
 .homework-helper-text {
-  color: #f4f3f3; 
-  font-size: 24px; 
+	color: #f4f3f3;
+	font-size: 24px;
 }
 
-.about{
-  color: #f4f3f3; 
-  font-size: 24px; 
-}}
+.about {
+	color: #f4f3f3;
+	font-size: 24px;
+}
