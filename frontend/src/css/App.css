@@ -53,6 +53,10 @@ body {
 	transition: 0.3s;
 }
 
+.container button:active {
+	background-color: rgb(10, 66, 10);
+}
+
 .container .subjectSelect {
 	padding: 10px;
 }
@@ -71,6 +75,12 @@ body {
 	color: #f4f3f3;
 	font-size: 24px;
 }
+
+.homepage {
+	color: #f4f3f3;
+	font-size: 24px;
+}
+
 .about h1, .about h2 {
   text-align: center;
 }
