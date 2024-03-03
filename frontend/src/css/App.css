@@ -31,3 +31,7 @@ body {
 	float: right;
 	margin: -8.5% 20% 0 0;
 }
+
+.container .subjectSelect {
+	padding: 10px;
+}
