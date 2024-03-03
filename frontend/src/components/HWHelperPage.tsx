@@ -53,39 +53,47 @@ const WolframAlphaExample: React.FC = () => {
 	return (
 		<div>
 			<div>
-				<h1>Math Homework Helper for Visual Learners</h1>
-				<p>Provides live images and solutions to math based word problems!</p>
+				<h1 className={helper_css.header}>
+					Math Homework Helper for Visual Learners
+				</h1>
+				<p className={helper_css.para}>
+					Provides live images and solutions to math based word problems!
+				</p>
 			</div>
 			<div>
 				<form onSubmit={handleSubmit}>
-					<input
-						type="text"
-						value={userQuery}
-						onChange={e => setUserQuery(e.target.value)}
-						placeholder="Enter your question here..."
-					/>
+					<div className={helper_css.queryInput}>
+						<input
+							type="text"
+							value={userQuery}
+							onChange={e => setUserQuery(e.target.value)}
+							placeholder="Enter your question here..."
+						/>
 
-					{loading && (
-						<l-tailspin
-							size="40"
-							stroke="5"
-							speed="0.9"
-							color="black"
-						></l-tailspin>
-					)}
+						{loading && (
+							<l-tailspin
+								size="40"
+								stroke="5"
+								speed="0.9"
+								color="black"
+							></l-tailspin>
+						)}
 
-					<button type="submit">Submit</button>
+						<button type="submit" className={helper_css.submitButton}>
+							Submit
+						</button>
+					</div>
 				</form>
 			</div>
 			<div>
 				{result &&
 					result.queryresult.pods.map(pod =>
 						pod.subpods.map((subpod, subIndex) => (
-							<div key={subIndex} style={{ margin: "1rem" }}>
+							<div key={subIndex} className={helper_css.imageContainer}>
 								<img
 									src={subpod.img.src}
 									alt={subpod.img.alt}
-									style={{ maxWidth: "100%", height: "auto" }}
+									className={helper_css.resultImage}
 								/>
 							</div>
 						))
