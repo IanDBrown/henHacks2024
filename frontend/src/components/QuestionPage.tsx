@@ -1,9 +1,7 @@
 import "../css/QuestionPage.css"
 import math from "../assets/questions.json"
-//import { useNavigate } from 'react-router-dom';
 import { useState } from "react"
-//import QuizEndScreen from "./QuizEndScreen";
-var sum=0
+var sum=0;
 const QuestionPage = () => {
     let selectedAnswer = ""
     const [hiddenClass, sethiddenClass] = useState("hidden");
@@ -13,11 +11,11 @@ const QuestionPage = () => {
     const [randomNumber, setRandomNumber] = useState(0);
     const [questionsAnswered, setQuestionsAnswered] = useState(1);
     const [amountCorrect, setAmountCorrect] = useState(0);
+    
     let allOptions: String = math.Math[scoreLevel][randomNumber].options
     let question: String = math.Math[scoreLevel][randomNumber].Problem;
     let answerArray: Array<string> = allOptions.split(" , ")
     const [rationale, setRationale] = useState(math.Math[scoreLevel][randomNumber].Rationale);
-   // const navigate = useNavigate();
 
     function checkAnswer (){
         sethiddenClass("shown")
@@ -29,13 +27,11 @@ const QuestionPage = () => {
                 setAmountCorrect(amountCorrect + 1)
                 setCorrectOrNot("Correct")
                 sum=sum+1
-                console.log(sum)
             }else{ 
                 setCorrectOrNot("Wrong")     
             }
         }else{
-           window.location.href = "http://localhost:5173/quizResults";
-//           <QuizEndScreen score = {sum}/>
+            window.location.href = "http://localhost:5173/quizResults";
         }
     }
 
@@ -55,14 +51,13 @@ const QuestionPage = () => {
                 setScoreLevel(scoreLevel)
             }
         }
-    //    navigate('/quizResults', { state: { sum } });
 
-        
         setRandomNumber(Math.floor(Math.random() * 5))
         allOptions = math.Math[scoreLevel][randomNumber].options
         question = math.Math[scoreLevel][randomNumber].Problem;
         answerArray = allOptions.split(" , ")
     }
+
     return ( 
         <div className="questionCard">
             <h3>Question {questionsAnswered} of 10</h3>
@@ -75,42 +70,74 @@ const QuestionPage = () => {
                     </label>
                 </div>
 
-            <div className="multipleChoiceDiv">
-                <label className="multipleChoiceLabel">
-                    <input className="multipleChoice" type="radio" name="react-tips" value="option2" onChange={()=>selectedAnswer ="b"}/>
-                    {answerArray[1]}
-                </label>
-            </div>
+				<div className="multipleChoiceDiv">
+					<label className="multipleChoiceLabel">
+						<input
+							className="multipleChoice"
+							type="radio"
+							name="react-tips"
+							value="option2"
+							onChange={() => (selectedAnswer = "b")}
+						/>
+						{answerArray[1]}
+					</label>
+				</div>
 
-            <div className="multipleChoiceDiv">
-                <label className="multipleChoiceLabel">
-                    <input className="multipleChoice" type="radio" name="react-tips" value="option3" onChange={()=>selectedAnswer ="c"}/>
-                    {answerArray[2]}
-                </label> 
-            </div>
+				<div className="multipleChoiceDiv">
+					<label className="multipleChoiceLabel">
+						<input
+							className="multipleChoice"
+							type="radio"
+							name="react-tips"
+							value="option3"
+							onChange={() => (selectedAnswer = "c")}
+						/>
+						{answerArray[2]}
+					</label>
+				</div>
 
-            <div className="multipleChoiceDiv">
-                <label className="multipleChoiceLabel">
-                    <input className="multipleChoice" type="radio" name="react-tips" value="option4" onChange={()=>selectedAnswer ="d"}/>
-                    {answerArray[3]}
-                </label> 
-            </div>
-            <div className="multipleChoiceDiv">
-                <label className="multipleChoiceLabel">
-                    <input className="multipleChoice" type="radio" name="react-tips" value="option5" onChange={()=>selectedAnswer ="e"}/>
-                    {answerArray[4]}
-                </label> 
-            </div>
-            </form>
-            <div className={`rationale ${hiddenClass}`} id="rationale">
-                {!showButton ? correctOrNot : null} <br/>
-                {!showButton ? rationale : null}
-            </div>
-            <div>
-                { showButton ? <button className="sumbitButton" onClick={()=>checkAnswer()}>Submit</button> : null }
-                { !showButton ? <button className="sumbitButton" onClick={()=>nextQuestion()}>Next Question</button> : null }
-            </div>
-        </div>
-    )
-}
+				<div className="multipleChoiceDiv">
+					<label className="multipleChoiceLabel">
+						<input
+							className="multipleChoice"
+							type="radio"
+							name="react-tips"
+							value="option4"
+							onChange={() => (selectedAnswer = "d")}
+						/>
+						{answerArray[3]}
+					</label>
+				</div>
+				<div className="multipleChoiceDiv">
+					<label className="multipleChoiceLabel">
+						<input
+							className="multipleChoice"
+							type="radio"
+							name="react-tips"
+							value="option5"
+							onChange={() => (selectedAnswer = "e")}
+						/>
+						{answerArray[4]}
+					</label>
+				</div>
+			</form>
+			<div className={`rationale ${hiddenClass}`} id="rationale">
+				{!showButton ? correctOrNot : null} <br />
+				{!showButton ? rationale : null}
+			</div>
+			<div>
+				{showButton ? (
+					<button className="sumbitButton" onClick={() => checkAnswer()}>
+						Submit
+					</button>
+				) : null}
+				{!showButton ? (
+					<button className="sumbitButton" onClick={() => nextQuestion()}>
+						Next Question
+					</button>
+				) : null}
+			</div>
+		</div>
+	);
+};
 export default QuestionPage;
