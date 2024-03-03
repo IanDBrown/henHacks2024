@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 
 body {
-	background-color: rgb(12, 105, 12);
+	background-image: linear-gradient(to right, rgb(19, 110, 67) , rgb(9, 185, 103));
 	/*overflow: hidden;*/
 }
 
@@ -77,8 +77,11 @@ body {
 }
 
 .about {
-	color: #f4f3f3;
-	font-size: 24px;
+  color: #f4f3f3;
+  font-size: 24px;
+  font-family: "DM Sans", sans-serif;
+  padding-left: 100px; /* Add padding to the left */
+  padding-right: 100px; /* Add padding to the right */
 }
 
 .about h1,
