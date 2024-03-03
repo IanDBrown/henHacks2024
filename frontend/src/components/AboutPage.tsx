@@ -10,7 +10,7 @@ export default function AboutPage() {
 
 	return (
 		<div className={`${about_css.about} ${fadeIn ? about_css.fadeIn : ""}`}>
-			<h1>About Intelli Learn</h1>
+			<h1 className={about_css.about_intelli_learn}>About Intelli Learn</h1>
 			<p>
 				Welcome to Intelli Learn, where innovation meets education. At the heart
 				of our mission lies a commitment to transforming the study of

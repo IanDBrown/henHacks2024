@@ -6,8 +6,11 @@
 	padding-right: 100px; /* Add padding to the right */
 }
 
-.about h1,
-.about h2 {
+.about h1, .about h2 {
+	margin-top: 20px; /* Adjust as needed */
+	margin-bottom: 20px; /* Adjust as needed */
+  }
+.about_intelli_learn{
 	text-align: center;
 }
 
