@@ -10,6 +10,9 @@ export default function NavBar() {
 			<Link to="/homework-helper" className={nav_css.navItem}>
 				Homework Helper
 			</Link>
+			<Link to="/quiz" className={nav_css.navItem}>
+				Quiz
+			</Link>
 			<Link to="/about" className={nav_css.navItem}>
 				About
 			</Link>
