@@ -4,7 +4,7 @@
 
 body {
 	background-color: rgb(12, 105, 12);
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .container {
@@ -134,7 +134,7 @@ body {
 	color: #f4f3f3;
 	font-size: 24px;
 }
-.about h1, .about h2 {
-  text-align: center;
+.about h1,
+.about h2 {
+	text-align: center;
 }
-
