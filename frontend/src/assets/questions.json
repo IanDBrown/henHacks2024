@@ -1,165 +1,164 @@
 {
-    "Math": [
-      [
-        {
-            "Problem": "there are 1000 buildings in a street . a sign - maker is contracted to number the houses from 1 to 1000 . how many zeroes will he need ?",
-            "options": "a ) 190 , b ) 191 , c ) 192 , d ) 193 , e ) 194",
-            "correct": "c",
-            "Rationale": "divide as ( 1 - 100 ) ( 100 - 200 ) . . . . ( 900 - 1000 ) total 192 answer : c"
-        },
-        {
-          "Problem": "today is thursday . i came home from a trip 3 days before the day after last monday . how many days have i been home ?",
-          "options": "a ) 1 day , b ) 2 days , c ) 7 days , d ) 6 days , e ) 10 days",
-          "correct": "d",
-          "Rationale": "d 6 days the day after last monday was tuesday . if i came home 3 days before that , i came home on saturday , sunday , monday , tuesday , wednesday , and thursday = 6 days ."
-        },
-        {
-          "Problem": "spanish language broadcast records last 90 min on each of two sides . if it takes 3 hours to translate one hour of broadcast , how long will it take to translate 16 full records ?",
-          "options": "a ) 144 hours , b ) 124 hours , c ) 134 hours , d ) 154 hours , e ) 164 hours",
-          "correct": "a",
-          "Rationale": "records last 90 min on each of 2 sides , = = > record last 90 * 2 = 180 min = 3 hours 16 full records - - > 16 * 3 = 48 hour broadcast given , 3 hours to translate 1 hour of broadcast let x be the time required to translate 48 hour broadcast ( 16 full records ) x = 48 * 3 = 144 hours answer : a"
-        },
-        {
-          "Problem": "two - third of a positive number and 16 / 216 of its reciprocal are equal . find the positive number .",
-          "options": "a ) 4 / 12 , b ) 4 / 17 , c ) 4 / 15 , d ) 4 / 11 , e ) 4 / 03",
-          "correct": "a",
-          "Rationale": "\"explanation : let the positive number be x . then , 2 / 3 x = 16 / 216 * 1 / x x 2 = 16 / 216 * 3 / 2 = 16 / 144 x = √ 16 / 144 = 4 / 12 . answer : a\""
-        },
-        {
-          "Problem": "a sum of rs . 1360 has been divided among a , b and c such that a gets 2 / 3 of what b gets and b gets 1 / 4 of what c gets . b ' s share is :",
-          "options": "a ) rs . 120 , b ) rs . 160 , c ) rs . 240 , d ) rs . 300 , e ) rs . 500",
-          "correct": "c",
-          "Rationale": "\"let c ' s share = rs . x then , b ' s share = rs . x / 4 ; a ' s share = rs . 2 / 3 * x / 4 = rs . x / 6 therefore x / 6 + x / 4 + x = 1360 17 x / 12 = 1360 x = 1360 * 12 / 17 = rs . 960 hence , b ' s share = rs . 960 / 4 = rs . 240 answer : c\""
-        }
-      ],
-      [
-        {
-            "Problem": "a man bought 20 shares of rs . 50 at 5 discount , the rate of dividend being 13 . the rate of interest obtained is :",
-            "Rationale": "\"investment = rs . [ 20 x ( 50 - 5 ) ] = rs . 900 . face value = rs . ( 50 x 20 ) = rs . 1000 . dividend = rs . 27 x 1000 = rs . 135 . 2 100 interest obtained = 135 x 100 % = 15 % 900 view answer discuss in forum answer : c\"",
-            "options": "a ) 27 % , b ) 87 % , c ) 15 % , d ) 66 % , e ) 88 %",
-            "correct": "c"
-        },
-        {
-          "Problem": "if 6 men and 8 women can do a piece of work in 10 days while 26 men and 48 women can do the same in 2 days , the time taken by 15 men and 20 women in doing the same type of work will be ?",
-          "options": "a ) 5 , b ) 4 , c ) 6 , d ) 7 , e ) 8",
-          "correct": "b",
-          "Rationale": "let 1 man ' s 1 day ' s work = x and 1 women ' s 1 day ' s work = y . then , 6 x + 8 y = 1 and 26 x + 48 y = 1 . 10 2 solving these two equations , we get : x = 1 and y = 1 . 100 200 ( 15 men + 20 women ) ' s 1 day ' s work = 15 + 20 = 1 . 100 200 4 15 men and 20 women can do the work in 4 days . hence answer will be b"
-        },
-        {
-          "Problem": "the cost of one photocopy is $ 0.02 . however , a 25 % discount is offered on orders of more than 100 photocopies . if arthur and david have to make 80 copies each , how much will each of them save if they submit a single order of 160 copies ?",
-          "options": "a ) $ 0.32 , b ) $ 0.40 , c ) $ 0.45 , d ) $ 0.48 , e ) $ 0.54",
-          "correct": "b",
-          "Rationale": "\"if arthur and david submit separate orders , each would be smaller than 100 photocopies , so no discount . each would pay ( 80 ) * ( $ 0.02 ) = $ 1.60 , or together , a cost of $ 3.20 - - - that ' s the combined no discount cost . if they submit things together as one big order , they get a discount off of that $ 3.20 price - - - - 25 % or 1 / 4 of that is $ 0.80 , the discount on the combined sale . they each effective save half that amount , or $ 0.40 . answer = ( b ) .\""
-        },
-        {
-          "Problem": "oak street begins at pine street and runs directly east for 2 kilometers until it ends when it meets maple street . oak street is intersected every 400 meters by a perpendicular street , and each of those streets other than pine street and maple street is given a number beginning at 1 st street ( one block east of pine street ) and continuing consecutively ( 2 nd street , 3 rd street , etc . . . ) until the highest - numbered street one block west of maple street . what is the highest - numbered street that intersects oak street ?",
-          "options": "a ) 4 th , b ) 5 th , c ) 6 th , d ) 7 th , e ) 8 th",
-          "correct": "a",
-          "Rationale": "2 km / 400 m = 5 . however , the street at the 2 - km mark is not 5 th street ; it is maple street . therefore , the highest numbered street is 4 th street . the answer is a ."
-        },
-        {
-          "Problem": "when tossed , a certain coin has equal probability of landing on either side . if the coin is tossed 4 times , what is the probability that it will land twice on heads and twice tails ?",
-          "options": "a ) 1 / 8 , b ) 1 / 4 , c ) 1 / 16 , d ) 1 / 32 , e ) 1 / 2",
-          "correct": "c",
-          "Rationale": "must be twice on heads and twice on tails 1 / 2 * 1 / 2 * 1 / 2 * 1 / 2 = 1 / 16 answer : c"
-        }
-      ],
-      [
-        {
-            "Problem": "? % of 360 = 108",
-            "Rationale": "\"? % of 360 = 108 or , ? = 108 × 100 / 360 = 30 answer a\"",
-            "options": "a ) 30 , b ) 36 , c ) 64 , d ) 72 , e ) none of these",
-            "correct": "a"
-        },
-        {
-          "Problem": "the circumferences of the fore and hind - wheels of a carriage are 2 2 / 5 and 3 3 / 7 meters respectively . a chalk mark is put on the point of contact of each wheel with the ground at any given moment . how far will the carriage have travelled so that their chalk marks may be again on the ground at the same time ?",
-          "options": "a ) 18 metres , b ) 16 metres , c ) 38 metres , d ) 42 metres , e ) 24 metres",
-          "correct": "e",
-          "Rationale": "a little reflection will show that chalk marks will touch the ground together for the first time after the wheels have passed over a distance which is the lcm of 2 2 / 5 metres and 3 3 / 7 metres . lcm of 12 / 5 metres and 24 / 7 metres = 24 metres . answer is e"
-        },
-        {
-          "Problem": "if 5 ^ 5 × 5 ^ x = ( 125 ) ^ 4 , then what is the value of x ?",
-          "options": "a ) 2 , b ) 3 , c ) 5 , d ) 6 , e ) 7",
-          "correct": "e",
-          "Rationale": "\"5 ^ 5 × 5 ^ x = ( 125 ) ^ 4 5 ^ ( 5 + x ) = 5 ^ 12 since they have the same base we can just set the exponents equal to each other : ( 5 + x ) = 12 x = 7 ans . e ) 7\""
-        },
-        {
-          "Problem": "machine a produces 100 parts thrice as fast as machine b does . machine b produces 100 parts in 30 minutes . if each machine produces parts at a constant rate , how many parts does machine a produce in 6 minutes ?",
-          "options": "a ) 20 , b ) 80 , c ) 40 , d ) 60 , e ) 50",
-          "correct": "d",
-          "Rationale": "machine b produces 100 part in 30 minutes . machine a produces 100 parts thrice as fast as b , so machine a produces 100 parts in 30 / 3 = 10 minutes . now , machine a produces 100 parts in 10 minutes which is 100 / 10 = 10 parts / minute . 10 parts x a total of 6 minutes = 60 d"
-        },
-        {
-          "Problem": "a train 150 m long passes a km stone in 15 seconds and another train of the same length travelling in opposite direction in 8 seconds . the speed of the second train is",
-          "options": "a ) 60 kmph , b ) 66 kmph , c ) 72 kmph , d ) 99 kmph , e ) 89 kmph",
-          "correct": "d",
-          "Rationale": "given that two trains are of same length i . e . . 150 mtrs first train passes the km stone in 15 seconds . here we have time and distance so speed = 150 / 15 = 10 m / s we need to find out the second train speed . suppose the speed of the 2 nd train is x m / s relative speed of two trains is ( 10 + x ) = = > ( 150 + 150 ) / ( 10 + x ) = 8 = = > ( 300 ) / ( 10 + x ) = 8 = = > 300 = 80 + 8 x = = > 300 - 80 = 8 x = = > 220 = 8 x : - x = 55 / 2 m / s convert m / s into km / ph ( 55 / 2 ) * ( 18 / 5 ) = 99 kmph answer : d"
-        }
-      ],
-      [
-        {
-            "Problem": "a corporation double its annual bonus to 100 of its employees . what percent of the employees ’ new bonus is the increase ?",
-            "Rationale": "let the annual bonus be x . a corporation double its annual bonus . so new bonus = 2 x . increase = 2 x - x = x the increase is what percent of the employees ’ new bonus = ( x / 2 x ) * 100 = 50 % hence a .",
-            "options": "a ) 50 % , b ) 12 % , c ) 8 % , d ) 6 % , e ) 5 %",
-            "correct": "a"
-        },
-        {
-          "Problem": "what is the max number of rectangular boxes , each measuring 5 inches by 2 inches by 7 inches , that can be packed into a rectangular packing box measuring 15 inches by 20 inches by 35 inches , if all boxes are aligned in the same direction ?",
-          "options": "a ) 200 , b ) 350 , c ) 100 , d ) 150 , e ) 120",
-          "correct": "d",
-          "Rationale": "\"the 5 inch side should be aligned to the 15 inch side ( 3 layer ) 2 inch side should be aligned to the 20 inch side . ( 10 layer ) 7 inch side should be aligned to the 35 inch side . ( 5 layer ) maximum number of rectangles = 3 * 10 * 5 = 150 answer is d\""
-        },
-        {
-          "Problem": "at a wedding reception , 125 guests ate chicken and 75 guests ate beef . if exactly 100 guests ate only one of the two types of meat , how many guests ate both types of meat ?",
-          "options": "a ) 5 , b ) 100 , c ) 7 , d ) 4 , e ) 50",
-          "correct": "e",
-          "Rationale": "say x guests ate both types of meat . ( 125 - x ) + ( 75 - x ) = 100 - - > x = 50 . answer : e ."
-        },
-        {
-          "Problem": "the average temperature for monday , tuesday and wednsday is 36.3 degrees c . the average temperature for tuesday , wednesday and thursday is 36.7 degrees c . if monday ’ s temperature recorded as 39 degrees c , find the thursday ’ s temperature ?",
-          "options": "a ) 60.2 degrees c , b ) 50.2 degrees c , c ) 40.2 degrees c , d ) 70.2 degrees c , e ) none of these",
-          "correct": "c",
-          "Rationale": "explanation : mon + tue + wed temperature = 3 x 36.3 = 108.9 tue + wed temperature = 108.9 – 39 = 69.9 tue + wed + thu temperature = 3 x 36.7 = 110.1 so , thursday ’ s temperature = 110.1 – 69.9 = 40.2 degrees c answer : c"
-        },
-        {
-          "Problem": "if 6 men and 8 women can do a piece of work in 10 days while 26 men and 48 women can do the same in 2 days , the time taken by 15 men and 20 women in doing the same type of work will be ?",
-          "options": "a ) 5 , b ) 4 , c ) 6 , d ) 7 , e ) 8",
-          "correct": "b",
-          "Rationale": "let 1 man ' s 1 day ' s work = x and 1 women ' s 1 day ' s work = y . then , 6 x + 8 y = 1 and 26 x + 48 y = 1 . 10 2 solving these two equations , we get : x = 1 and y = 1 . 100 200 ( 15 men + 20 women ) ' s 1 day ' s work = 15 + 20 = 1 . 100 200 4 15 men and 20 women can do the work in 4 days . hence answer will be b"
-        }
-
-      ],
-      [
-        {
-            "Problem": "a and b together do a work in 20 days . b and c together in 15 days and c and a in 12 days . then b alone can finish same work in how many days ?",
-            "Rationale": "\"( a + b ) work in 1 day = 1 / 20 , ( b + c ) work in 1 days = 1 / 15 . , ( c + a ) work in 1 days = 1 / 12 ( 1 ) adding = 2 [ a + b + c ] in 1 day work = [ 1 / 20 + 1 / 15 + 1 / 12 ] = 1 / 5 ( a + b + c ) work in 1 day = 1 / 10 b work in 1 days = [ a + b + c ] work in 1 days - work of ( a + c ) in 1 days = [ 1 / 10 - 1 / 12 ] = 1 / 60 b alone finish work in 60 days answer b\"",
-            "options": "a ) 50 , b ) 60 , c ) 45 , d ) 35 , e ) 48",
-            "correct": "b"
-        },
-        {
-          "Problem": "the cost of one photocopy is $ 0.02 . however , a 25 % discount is offered on orders of more than 100 photocopies . if arthur and david have to make 80 copies each , how much will each of them save if they submit a single order of 160 copies ?",
-          "options": "a ) $ 0.32 , b ) $ 0.40 , c ) $ 0.45 , d ) $ 0.48 , e ) $ 0.54",
-          "correct": "b",
-          "Rationale": "\"if arthur and david submit separate orders , each would be smaller than 100 photocopies , so no discount . each would pay ( 80 ) * ( $ 0.02 ) = $ 1.60 , or together , a cost of $ 3.20 - - - that ' s the combined no discount cost . if they submit things together as one big order , they get a discount off of that $ 3.20 price - - - - 25 % or 1 / 4 of that is $ 0.80 , the discount on the combined sale . they each effective save half that amount , or $ 0.40 . answer = ( b ) .\""
-        },
-        {
-          "Problem": "one day , connie plays a game with a fair 6 - sided die . connie rolls the die until she rolls a 6 , at which point the game ends . if she rolls a 6 on her first turn , connie wins 6 dollars . for each subsequent turn , connie wins 1 6 of the amount she would have won the previous turn . what is connie ' s expected earnings from the game ?",
-          "Rationale": "connie has a 1 6 chance of winning 6 dollars her first turn . she has a 5 / 6 1 / 6 chance of winning 1 dollar her second turn . next , she has a 25 36 1 / 6 chance of winning 1 / 6 dollars her third turn . generalizing , connie ' s expected earnings form a geometric series with initial term 1 / 6 * 6 = 1 and common ratio 5 / 6 * 1 / 6 = 5 / 36 . hence , connie ' s expected earnings are 1 / 1 - 5 / 36 = 36 / 31 correct answer d",
-          "options": "a ) 32 / 31 , b ) 33 / 31 , c ) 34 / 31 , d ) 36 / 31 , e ) 0 / 31",
-          "correct": "d"
-        },
-        {
-          "Problem": "given a + b = 1 , find the value of 2 a + 2 b . two solutions are presented below . only one is correct , even though both yield the correct answer .",
-          "Rationale": "because a + b = 1 , 2 a + 2 b = 2 ( a + b ) = 2 × 1 = 2 . correct answer d",
-          "options": "a ) 3 , b ) 5 , c ) 4 , d ) 2 , e ) 1",
-          "correct": "d"
-        },
-        {
-          "Problem": "in a garden , there are 10 rows and 12 columns of mango trees . the distance between the two trees is 2 metres and a distance of four metre is left from all sides of the boundary of the garden . what is the length of the garden ?",
-          "Rationale": "\"between the 12 mango trees , there are 11 gaps and each gap has 2 meter length also , 4 meter is left from all sides of the boundary of the garden . hence , length of the garden = ( 11 ã — 2 ) + 4 + 4 = 30 meter answer is e .\"",
-          "options": "a ) 22 , b ) 24 , c ) 26 , d ) 28 , e ) 30",
-          "correct": "e"
-        }
-      ]
-    ]
+	"Math": [
+		[
+			{
+				"Problem": "There are 1000 buildings on a street. A sign-maker is contracted to number the houses from 1 to 1000. How many zeroes will he need?",
+				"options": "a ) 190 , b ) 191 , c ) 192 , d ) 193 , e ) 194",
+				"correct": "c",
+				"Rationale": "divide as ( 1 - 100 ) ( 100 - 200 ) . . . . ( 900 - 1000 ) total 192 answer : c"
+			},
+			{
+				"Problem": "Today is Thursday. I returned home from a trip three days before the day after last Monday. How many days have I been home?",
+				"options": "a ) 1 day , b ) 2 days , c ) 7 days , d ) 6 days , e ) 10 days",
+				"correct": "d",
+				"Rationale": "d 6 days the day after last monday was tuesday . if i came home 3 days before that , i came home on saturday , sunday , monday , tuesday , wednesday , and thursday = 6 days ."
+			},
+			{
+				"Problem": "A Spanish language broadcast records for 90 minutes on each of two sides. If it takes 3 hours to translate one hour of broadcast, how long will it take to translate 16 full records?",
+				"options": "a ) 144 hours , b ) 124 hours , c ) 134 hours , d ) 154 hours , e ) 164 hours",
+				"correct": "a",
+				"Rationale": "records last 90 min on each of 2 sides , = = > record last 90 * 2 = 180 min = 3 hours 16 full records - - > 16 * 3 = 48 hour broadcast given , 3 hours to translate 1 hour of broadcast let x be the time required to translate 48 hour broadcast ( 16 full records ) x = 48 * 3 = 144 hours answer : a"
+			},
+			{
+				"Problem": "Two-thirds of a positive number and 16/216 of its reciprocal are equal. Find the positive number.",
+				"options": "a ) 4 / 12 , b ) 4 / 17 , c ) 4 / 15 , d ) 4 / 11 , e ) 4 / 03",
+				"correct": "a",
+				"Rationale": "\"explanation : let the positive number be x . then , 2 / 3 x = 16 / 216 * 1 / x x 2 = 16 / 216 * 3 / 2 = 16 / 144 x = √ 16 / 144 = 4 / 12 . answer : a\""
+			},
+			{
+				"Problem": "A sum of Rs. 1360 has been divided among A, B, and C such that A gets 2/3 of what B gets, and B gets 1/4 of what C gets. We need to find B's share.",
+				"options": "a ) rs . 120 , b ) rs . 160 , c ) rs . 240 , d ) rs . 300 , e ) rs . 500",
+				"correct": "c",
+				"Rationale": "\"let c ' s share = rs . x then , b ' s share = rs . x / 4 ; a ' s share = rs . 2 / 3 * x / 4 = rs . x / 6 therefore x / 6 + x / 4 + x = 1360 17 x / 12 = 1360 x = 1360 * 12 / 17 = rs . 960 hence , b ' s share = rs . 960 / 4 = rs . 240 answer : c\""
+			}
+		],
+		[
+			{
+				"Problem": "A man bought 20 shares of Rs. 50 at a 5% discount. The rate of dividend being 13%. The rate of interest obtained is:",
+				"Rationale": "\"investment = rs . [ 20 x ( 50 - 5 ) ] = rs . 900 . face value = rs . ( 50 x 20 ) = rs . 1000 . dividend = rs . 27 x 1000 = rs . 135 . 2 100 interest obtained = 135 x 100 % = 15 % 900 view answer discuss in forum answer : c\"",
+				"options": "a ) 27 % , b ) 87 % , c ) 15 % , d ) 66 % , e ) 88 %",
+				"correct": "c"
+			},
+			{
+				"Problem": "If 6 men and 8 women can do a piece of work in 10 days while 26 men and 48 women can do the same in 2 days, the time taken by 15 men and 20 women in doing the same type of work will be?",
+				"options": "a ) 5 , b ) 4 , c ) 6 , d ) 7 , e ) 8",
+				"correct": "b",
+				"Rationale": "let 1 man ' s 1 day ' s work = x and 1 women ' s 1 day ' s work = y . then , 6 x + 8 y = 1 and 26 x + 48 y = 1 . 10 2 solving these two equations , we get : x = 1 and y = 1 . 100 200 ( 15 men + 20 women ) ' s 1 day ' s work = 15 + 20 = 1 . 100 200 4 15 men and 20 women can do the work in 4 days . hence answer will be b"
+			},
+			{
+				"Problem": "The cost of one photocopy is $0.02. However, a 25% discount is offered on orders of more than 100 photocopies. If Arthur and David have to make 80 copies each, how much will each of them save if they submit a single order of 160 copies?",
+				"options": "a ) $ 0.32 , b ) $ 0.40 , c ) $ 0.45 , d ) $ 0.48 , e ) $ 0.54",
+				"correct": "b",
+				"Rationale": "\"if arthur and david submit separate orders , each would be smaller than 100 photocopies , so no discount . each would pay ( 80 ) * ( $ 0.02 ) = $ 1.60 , or together , a cost of $ 3.20 - - - that ' s the combined no discount cost . if they submit things together as one big order , they get a discount off of that $ 3.20 price - - - - 25 % or 1 / 4 of that is $ 0.80 , the discount on the combined sale . they each effective save half that amount , or $ 0.40 . answer = ( b ) .\""
+			},
+			{
+				"Problem": "Oak Street begins at Pine Street and runs directly east for 2 kilometers until it ends when it meets Maple Street. Oak Street is intersected every 400 meters by a perpendicular street, and each of those streets, other than Pine Street and Maple Street, is given a number beginning at 1st Street (one block east of Pine Street) and continuing consecutively (2nd Street, 3rd Street, etc.) until the highest-numbered street one block west of Maple Street. What is the highest-numbered street that intersects Oak Street?",
+				"options": "a ) 4 th , b ) 5 th , c ) 6 th , d ) 7 th , e ) 8 th",
+				"correct": "a",
+				"Rationale": "2 km / 400 m = 5 . however , the street at the 2 - km mark is not 5 th street ; it is maple street . therefore , the highest numbered street is 4 th street . the answer is a ."
+			},
+			{
+				"Problem": "when tossed , a certain coin has equal probability of landing on either side . if the coin is tossed 4 times , what is the probability that it will land twice on heads and twice tails ?",
+				"options": "a ) 1 / 8 , b ) 1 / 4 , c ) 1 / 16 , d ) 1 / 32 , e ) 1 / 2",
+				"correct": "c",
+				"Rationale": "must be twice on heads and twice on tails 1 / 2 * 1 / 2 * 1 / 2 * 1 / 2 = 1 / 16 answer : c"
+			}
+		],
+		[
+			{
+				"Problem": "? % of 360 = 108",
+				"Rationale": "\"? % of 360 = 108 or , ? = 108 × 100 / 360 = 30 answer a\"",
+				"options": "a ) 30 , b ) 36 , c ) 64 , d ) 72 , e ) none of these",
+				"correct": "a"
+			},
+			{
+				"Problem": "the circumferences of the fore and hind - wheels of a carriage are 2 2 / 5 and 3 3 / 7 meters respectively . a chalk mark is put on the point of contact of each wheel with the ground at any given moment . how far will the carriage have travelled so that their chalk marks may be again on the ground at the same time ?",
+				"options": "a ) 18 metres , b ) 16 metres , c ) 38 metres , d ) 42 metres , e ) 24 metres",
+				"correct": "e",
+				"Rationale": "a little reflection will show that chalk marks will touch the ground together for the first time after the wheels have passed over a distance which is the lcm of 2 2 / 5 metres and 3 3 / 7 metres . lcm of 12 / 5 metres and 24 / 7 metres = 24 metres . answer is e"
+			},
+			{
+				"Problem": "if 5 ^ 5 × 5 ^ x = ( 125 ) ^ 4 , then what is the value of x ?",
+				"options": "a ) 2 , b ) 3 , c ) 5 , d ) 6 , e ) 7",
+				"correct": "e",
+				"Rationale": "\"5 ^ 5 × 5 ^ x = ( 125 ) ^ 4 5 ^ ( 5 + x ) = 5 ^ 12 since they have the same base we can just set the exponents equal to each other : ( 5 + x ) = 12 x = 7 ans . e ) 7\""
+			},
+			{
+				"Problem": "machine a produces 100 parts thrice as fast as machine b does . machine b produces 100 parts in 30 minutes . if each machine produces parts at a constant rate , how many parts does machine a produce in 6 minutes ?",
+				"options": "a ) 20 , b ) 80 , c ) 40 , d ) 60 , e ) 50",
+				"correct": "d",
+				"Rationale": "machine b produces 100 part in 30 minutes . machine a produces 100 parts thrice as fast as b , so machine a produces 100 parts in 30 / 3 = 10 minutes . now , machine a produces 100 parts in 10 minutes which is 100 / 10 = 10 parts / minute . 10 parts x a total of 6 minutes = 60 d"
+			},
+			{
+				"Problem": "a train 150 m long passes a km stone in 15 seconds and another train of the same length travelling in opposite direction in 8 seconds . the speed of the second train is",
+				"options": "a ) 60 kmph , b ) 66 kmph , c ) 72 kmph , d ) 99 kmph , e ) 89 kmph",
+				"correct": "d",
+				"Rationale": "given that two trains are of same length i . e . . 150 mtrs first train passes the km stone in 15 seconds . here we have time and distance so speed = 150 / 15 = 10 m / s we need to find out the second train speed . suppose the speed of the 2 nd train is x m / s relative speed of two trains is ( 10 + x ) = = > ( 150 + 150 ) / ( 10 + x ) = 8 = = > ( 300 ) / ( 10 + x ) = 8 = = > 300 = 80 + 8 x = = > 300 - 80 = 8 x = = > 220 = 8 x : - x = 55 / 2 m / s convert m / s into km / ph ( 55 / 2 ) * ( 18 / 5 ) = 99 kmph answer : d"
+			}
+		],
+		[
+			{
+				"Problem": "a corporation double its annual bonus to 100 of its employees . what percent of the employees ’ new bonus is the increase ?",
+				"Rationale": "let the annual bonus be x . a corporation double its annual bonus . so new bonus = 2 x . increase = 2 x - x = x the increase is what percent of the employees ’ new bonus = ( x / 2 x ) * 100 = 50 % hence a .",
+				"options": "a ) 50 % , b ) 12 % , c ) 8 % , d ) 6 % , e ) 5 %",
+				"correct": "a"
+			},
+			{
+				"Problem": "what is the max number of rectangular boxes , each measuring 5 inches by 2 inches by 7 inches , that can be packed into a rectangular packing box measuring 15 inches by 20 inches by 35 inches , if all boxes are aligned in the same direction ?",
+				"options": "a ) 200 , b ) 350 , c ) 100 , d ) 150 , e ) 120",
+				"correct": "d",
+				"Rationale": "\"the 5 inch side should be aligned to the 15 inch side ( 3 layer ) 2 inch side should be aligned to the 20 inch side . ( 10 layer ) 7 inch side should be aligned to the 35 inch side . ( 5 layer ) maximum number of rectangles = 3 * 10 * 5 = 150 answer is d\""
+			},
+			{
+				"Problem": "at a wedding reception , 125 guests ate chicken and 75 guests ate beef . if exactly 100 guests ate only one of the two types of meat , how many guests ate both types of meat ?",
+				"options": "a ) 5 , b ) 100 , c ) 7 , d ) 4 , e ) 50",
+				"correct": "e",
+				"Rationale": "say x guests ate both types of meat . ( 125 - x ) + ( 75 - x ) = 100 - - > x = 50 . answer : e ."
+			},
+			{
+				"Problem": "the average temperature for monday , tuesday and wednsday is 36.3 degrees c . the average temperature for tuesday , wednesday and thursday is 36.7 degrees c . if monday ’ s temperature recorded as 39 degrees c , find the thursday ’ s temperature ?",
+				"options": "a ) 60.2 degrees c , b ) 50.2 degrees c , c ) 40.2 degrees c , d ) 70.2 degrees c , e ) none of these",
+				"correct": "c",
+				"Rationale": "explanation : mon + tue + wed temperature = 3 x 36.3 = 108.9 tue + wed temperature = 108.9 – 39 = 69.9 tue + wed + thu temperature = 3 x 36.7 = 110.1 so , thursday ’ s temperature = 110.1 – 69.9 = 40.2 degrees c answer : c"
+			},
+			{
+				"Problem": "if 6 men and 8 women can do a piece of work in 10 days while 26 men and 48 women can do the same in 2 days , the time taken by 15 men and 20 women in doing the same type of work will be ?",
+				"options": "a ) 5 , b ) 4 , c ) 6 , d ) 7 , e ) 8",
+				"correct": "b",
+				"Rationale": "let 1 man ' s 1 day ' s work = x and 1 women ' s 1 day ' s work = y . then , 6 x + 8 y = 1 and 26 x + 48 y = 1 . 10 2 solving these two equations , we get : x = 1 and y = 1 . 100 200 ( 15 men + 20 women ) ' s 1 day ' s work = 15 + 20 = 1 . 100 200 4 15 men and 20 women can do the work in 4 days . hence answer will be b"
+			}
+		],
+		[
+			{
+				"Problem": "a and b together do a work in 20 days . b and c together in 15 days and c and a in 12 days . then b alone can finish same work in how many days ?",
+				"Rationale": "\"( a + b ) work in 1 day = 1 / 20 , ( b + c ) work in 1 days = 1 / 15 . , ( c + a ) work in 1 days = 1 / 12 ( 1 ) adding = 2 [ a + b + c ] in 1 day work = [ 1 / 20 + 1 / 15 + 1 / 12 ] = 1 / 5 ( a + b + c ) work in 1 day = 1 / 10 b work in 1 days = [ a + b + c ] work in 1 days - work of ( a + c ) in 1 days = [ 1 / 10 - 1 / 12 ] = 1 / 60 b alone finish work in 60 days answer b\"",
+				"options": "a ) 50 , b ) 60 , c ) 45 , d ) 35 , e ) 48",
+				"correct": "b"
+			},
+			{
+				"Problem": "the cost of one photocopy is $ 0.02 . however , a 25 % discount is offered on orders of more than 100 photocopies . if arthur and david have to make 80 copies each , how much will each of them save if they submit a single order of 160 copies ?",
+				"options": "a ) $ 0.32 , b ) $ 0.40 , c ) $ 0.45 , d ) $ 0.48 , e ) $ 0.54",
+				"correct": "b",
+				"Rationale": "\"if arthur and david submit separate orders , each would be smaller than 100 photocopies , so no discount . each would pay ( 80 ) * ( $ 0.02 ) = $ 1.60 , or together , a cost of $ 3.20 - - - that ' s the combined no discount cost . if they submit things together as one big order , they get a discount off of that $ 3.20 price - - - - 25 % or 1 / 4 of that is $ 0.80 , the discount on the combined sale . they each effective save half that amount , or $ 0.40 . answer = ( b ) .\""
+			},
+			{
+				"Problem": "one day , connie plays a game with a fair 6 - sided die . connie rolls the die until she rolls a 6 , at which point the game ends . if she rolls a 6 on her first turn , connie wins 6 dollars . for each subsequent turn , connie wins 1 6 of the amount she would have won the previous turn . what is connie ' s expected earnings from the game ?",
+				"Rationale": "connie has a 1 6 chance of winning 6 dollars her first turn . she has a 5 / 6 1 / 6 chance of winning 1 dollar her second turn . next , she has a 25 36 1 / 6 chance of winning 1 / 6 dollars her third turn . generalizing , connie ' s expected earnings form a geometric series with initial term 1 / 6 * 6 = 1 and common ratio 5 / 6 * 1 / 6 = 5 / 36 . hence , connie ' s expected earnings are 1 / 1 - 5 / 36 = 36 / 31 correct answer d",
+				"options": "a ) 32 / 31 , b ) 33 / 31 , c ) 34 / 31 , d ) 36 / 31 , e ) 0 / 31",
+				"correct": "d"
+			},
+			{
+				"Problem": "given a + b = 1 , find the value of 2 a + 2 b . two solutions are presented below . only one is correct , even though both yield the correct answer .",
+				"Rationale": "because a + b = 1 , 2 a + 2 b = 2 ( a + b ) = 2 × 1 = 2 . correct answer d",
+				"options": "a ) 3 , b ) 5 , c ) 4 , d ) 2 , e ) 1",
+				"correct": "d"
+			},
+			{
+				"Problem": "in a garden , there are 10 rows and 12 columns of mango trees . the distance between the two trees is 2 metres and a distance of four metre is left from all sides of the boundary of the garden . what is the length of the garden ?",
+				"Rationale": "\"between the 12 mango trees , there are 11 gaps and each gap has 2 meter length also , 4 meter is left from all sides of the boundary of the garden . hence , length of the garden = ( 11 ã — 2 ) + 4 + 4 = 30 meter answer is e .\"",
+				"options": "a ) 22 , b ) 24 , c ) 26 , d ) 28 , e ) 30",
+				"correct": "e"
+			}
+		]
+	]
 }

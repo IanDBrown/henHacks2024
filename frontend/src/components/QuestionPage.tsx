@@ -13,9 +13,9 @@ const QuestionPage = () => {
 	const [questionsAnswered, setQuestionsAnswered] = useState(1);
 	const [amountCorrect, setAmountCorrect] = useState(0);
 
-	let allOptions: string = math.Math[scoreLevel][randomNumber].options;
-	let question: string = math.Math[scoreLevel][randomNumber].Problem;
-	let answerArray: Array<string> = allOptions.split(" , ");
+	let allOptions = math.Math[scoreLevel][randomNumber].options;
+	let question = math.Math[scoreLevel][randomNumber].Problem;
+	let answerArray = allOptions.split(" , ");
 	const [rationale, setRationale] = useState(
 		math.Math[scoreLevel][randomNumber].Rationale
 	);
@@ -64,73 +64,26 @@ const QuestionPage = () => {
 	}
 
 	return (
-		<div className="questionCard">
+		<div className={questions_css.questionCard}>
 			<h3>Question {questionsAnswered} of 10</h3>
-			<h1 className="questionHeader">{question}</h1>
+			<h1 className={questions_css.questionHeader}>{question}</h1>
 			<form>
-				<div className="multipleChoiceDiv">
-					<label className="multipleChoiceLabel">
-						<input
-							className="multipleChoice"
-							type="radio"
-							name="react-tips"
-							value="option1"
-							onChange={() => (selectedAnswer = "a")}
-						/>
-						{answerArray[0]}
-					</label>
-				</div>
-
-				<div className="multipleChoiceDiv">
-					<label className="multipleChoiceLabel">
-						<input
-							className="multipleChoice"
-							type="radio"
-							name="react-tips"
-							value="option2"
-							onChange={() => (selectedAnswer = "b")}
-						/>
-						{answerArray[1]}
-					</label>
-				</div>
-
-				<div className="multipleChoiceDiv">
-					<label className="multipleChoiceLabel">
-						<input
-							className="multipleChoice"
-							type="radio"
-							name="react-tips"
-							value="option3"
-							onChange={() => (selectedAnswer = "c")}
-						/>
-						{answerArray[2]}
-					</label>
-				</div>
-
-				<div className="multipleChoiceDiv">
-					<label className="multipleChoiceLabel">
-						<input
-							className="multipleChoice"
-							type="radio"
-							name="react-tips"
-							value="option4"
-							onChange={() => (selectedAnswer = "d")}
-						/>
-						{answerArray[3]}
-					</label>
-				</div>
-				<div className="multipleChoiceDiv">
-					<label className="multipleChoiceLabel">
-						<input
-							className="multipleChoice"
-							type="radio"
-							name="react-tips"
-							value="option5"
-							onChange={() => (selectedAnswer = "e")}
-						/>
-						{answerArray[4]}
-					</label>
-				</div>
+				{answerArray.map((answer, index) => (
+					<div className={questions_css.multipleChoiceDiv} key={index}>
+						<label className={questions_css.multipleChoiceLabel}>
+							<input
+								className={questions_css.multipleChoice}
+								type="radio"
+								name="react-tips"
+								value={`option${index + 1}`}
+								onChange={() =>
+									(selectedAnswer = String.fromCharCode(97 + index))
+								}
+							/>
+							{answer}
+						</label>
+					</div>
+				))}
 			</form>
 			<div className={`rationale ${hiddenClass}`} id="rationale">
 				{!showButton ? correctOrNot : null} <br />
@@ -138,12 +91,18 @@ const QuestionPage = () => {
 			</div>
 			<div>
 				{showButton ? (
-					<button className="sumbitButton" onClick={() => checkAnswer()}>
+					<button
+						className={questions_css.sumbitButton}
+						onClick={() => checkAnswer()}
+					>
 						Submit
 					</button>
 				) : null}
 				{!showButton ? (
-					<button className="sumbitButton" onClick={() => nextQuestion()}>
+					<button
+						className={questions_css.sumbitButton}
+						onClick={() => nextQuestion()}
+					>
 						Next Question
 					</button>
 				) : null}
@@ -151,4 +110,5 @@ const QuestionPage = () => {
 		</div>
 	);
 };
+
 export default QuestionPage;
