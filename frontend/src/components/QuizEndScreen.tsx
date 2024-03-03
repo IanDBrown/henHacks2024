@@ -1,5 +1,6 @@
 const QuizEndScreen = () => {
     return ( 
+        
         <h1>Score: </h1>
      );
 }
