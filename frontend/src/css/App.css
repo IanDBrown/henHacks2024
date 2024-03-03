@@ -8,7 +8,6 @@ body {
 		rgb(19, 110, 67),
 		rgb(9, 185, 103)
 	);
-	/*overflow: hidden;*/
 }
 
 .container {
@@ -17,7 +16,7 @@ body {
 	/* border: 1px solid white; */
 	color: white;
 	padding: 10px;
-	margin: 15% 0 0 10%;
+	margin: 14.5% 0 0 10%;
 	position: absolute;
 }
 
