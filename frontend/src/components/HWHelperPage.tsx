@@ -50,57 +50,56 @@ const WolframAlphaExample: React.FC = () => {
     fetchData(userQuery);
   };
 
-  return (
-    <div>
-      <div>
-        <h1 className={helper_css.header}>
-          Math Homework Helper for Visual Learners
-        </h1>
-        <p className={helper_css.para}>
-          Provides live images and solutions to math based word problems!
-        </p>
-      </div>
-      <div>
-        <form onSubmit={handleSubmit}>
-          <div className={helper_css.queryInput}>
-            <input
-              type="text"
-              value={userQuery}
-              onChange={(e) => setUserQuery(e.target.value)}
-              placeholder="Enter your question here..."
-            />
+	return (
+		<div>
+			<div>
+				<h1 className={helper_css.header}>
+					Math Homework Helper for Visual Learners
+				</h1>
+				<p className={helper_css.para}>
+					Provides live images and solutions to math based word problems!
+				</p>
+			</div>
+			<div>
+				<form onSubmit={handleSubmit}>
+					<div className={helper_css.queryInput}>
+						<input
+							type="text"
+							value={userQuery}
+							onChange={e => setUserQuery(e.target.value)}
+							placeholder="Enter your question here..."
+						/>
 
-            {loading && (
-              <l-tailspin
-                size="40"
-                stroke="5"
-                speed="0.9"
-                color="black"
-              ></l-tailspin>
-            )}
+						{loading && (
+							<l-tailspin
+								size="40"
+								stroke="5"
+								speed="0.9"
+								color="black"
+							></l-tailspin>
+						)}
 
-            <button type="submit" className={helper_css.submitButton}>
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-      <div>
-        {result &&
-          result.queryresult.pods.map((pod) =>
-            pod.subpods.map((subpod, subIndex) => (
-              <div key={subIndex} className={helper_css.imageContainer}>
-                <img
-                  src={subpod.img.src}
-                  alt={subpod.img.alt}
-                  className={helper_css.resultImage}
-                />
-              </div>
-            ))
-          )}
-      </div>
-    </div>
-  );
-};
+						<button type="submit" className={helper_css.submitButton}>
+							Submit
+						</button>
+					</div>
+				</form>
+			</div>
+			<div>
+				{result &&
+					result.queryresult.pods.map(pod =>
+						pod.subpods.map((subpod, subIndex) => (
+							<div key={subIndex} className={helper_css.imageContainer}>
+								<img
+									src={subpod.img.src}
+									alt={subpod.img.alt}
+									className={helper_css.resultImage}
+								/>
+							</div>
+						))
+					)}
+			</div>
+		</div>
+	);
 
 export default WolframAlphaExample;
