@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import "../css/questions.module.css"
+=======
+>>>>>>> ed956d3f379fb13f267d119dbed2633f69026722
 import math from "../assets/questions.json";
 import { useState } from "react";
 
