@@ -1,6 +1,6 @@
 {
-    "Math": {
-     "LevelOne": [
+    "Math": [
+      [
         {
             "Problem": "there are 1000 buildings in a street . a sign - maker is contracted to number the houses from 1 to 1000 . how many zeroes will he need ?",
             "options": "a ) 190 , b ) 191 , c ) 192 , d ) 193 , e ) 194",
@@ -8,7 +8,7 @@
             "Rationale": "divide as ( 1 - 100 ) ( 100 - 200 ) . . . . ( 900 - 1000 ) total 192 answer : c"
         }
       ],
-      "LevelTwo": [
+      [
         {
             "Problem": "a man bought 20 shares of rs . 50 at 5 discount , the rate of dividend being 13 . the rate of interest obtained is :",
             "Rationale": "\"investment = rs . [ 20 x ( 50 - 5 ) ] = rs . 900 . face value = rs . ( 50 x 20 ) = rs . 1000 . dividend = rs . 27 x 1000 = rs . 135 . 2 100 interest obtained = 135 x 100 % = 15 % 900 view answer discuss in forum answer : c\"",
@@ -16,7 +16,7 @@
             "correct": "c"
         }
       ],
-      "LevelThree": [
+      [
         {
             "Problem": "? % of 360 = 108",
             "Rationale": "\"? % of 360 = 108 or , ? = 108 × 100 / 360 = 30 answer a\"",
@@ -24,7 +24,7 @@
             "correct": "a"
         }
       ],
-      "LevelFour": [
+      [
         {
             "Problem": "a corporation double its annual bonus to 100 of its employees . what percent of the employees ’ new bonus is the increase ?",
             "Rationale": "let the annual bonus be x . a corporation double its annual bonus . so new bonus = 2 x . increase = 2 x - x = x the increase is what percent of the employees ’ new bonus = ( x / 2 x ) * 100 = 50 % hence a .",
@@ -32,7 +32,7 @@
             "correct": "a"
         }
       ],
-      "LevelFive": [
+      [
         {
             "Problem": "a and b together do a work in 20 days . b and c together in 15 days and c and a in 12 days . then b alone can finish same work in how many days ?",
             "Rationale": "\"( a + b ) work in 1 day = 1 / 20 , ( b + c ) work in 1 days = 1 / 15 . , ( c + a ) work in 1 days = 1 / 12 ( 1 ) adding = 2 [ a + b + c ] in 1 day work = [ 1 / 20 + 1 / 15 + 1 / 12 ] = 1 / 5 ( a + b + c ) work in 1 day = 1 / 10 b work in 1 days = [ a + b + c ] work in 1 days - work of ( a + c ) in 1 days = [ 1 / 10 - 1 / 12 ] = 1 / 60 b alone finish work in 60 days answer b\"",
@@ -40,5 +40,5 @@
             "correct": "b"
         }
       ]
-     }
+    ]
 }

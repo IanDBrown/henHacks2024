@@ -32,3 +32,16 @@
     margin-top: 3%;
     margin-left: 45%;
 }
+
+.rationale{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+.shown{
+    display: block;
+}
