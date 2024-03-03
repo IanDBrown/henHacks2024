@@ -1,6 +1,7 @@
 import "../css/QuestionPage.css";
 import math from "../assets/questions.json";
 import { useState } from "react";
+import questions_css from "../css/questions.module.css";
 
 const QuestionPage = () => {
 	let selectedAnswer = "";
