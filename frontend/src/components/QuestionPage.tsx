@@ -31,9 +31,12 @@ const QuestionPage = () => {
             }else{ 
                 setCorrectOrNot("Wrong")     
             }
+            localStorage.setItem('quizSum', sum.toString());
+
         }else{
             window.location.href = "http://localhost:5173/quizResults";
         }
+        
     }
 
     function nextQuestion(){
