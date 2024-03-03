@@ -7,8 +7,8 @@ export default function NavBar() {
 			<Link to="/" className={nav_css.navItem}>
 				Home
 			</Link>
-			<Link to="/homework-helper" className={nav_css.navItem}>
-				Homework Helper
+			<Link to="/quiz" className={nav_css.navItem}>
+				Quiz
 			</Link>
 			<Link to="/about" className={nav_css.navItem}>
 				About
