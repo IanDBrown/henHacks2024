@@ -13,7 +13,7 @@ body {
 	/* border: 1px solid white; */
 	color: white;
 	padding: 10px;
-	margin: 20% 0 0 10%;
+	margin: 15% 0 0 10%;
 	position: absolute;
 }
 
@@ -42,10 +42,6 @@ body {
 .homepage {
 	color: #f4f3f3;
 	font-size: 24px;
-}
-
-body {
-	color: rgb(164, 151, 151);
 }
 
 .navbar {
@@ -99,10 +95,6 @@ body {
 .homepage {
 	color: #f4f3f3;
 	font-size: 24px;
-}
-
-body {
-	color: rgb(164, 151, 151);
 }
 
 .navbar {
