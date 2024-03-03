@@ -12,7 +12,7 @@ const Homepage: React.FC = () => {
   return (
     <div className={`container ${fadeIn ? 'fade-in' : ''}`}>
       <div className="title">
-        <h1>Intelli Learn</h1>
+        <h1 className="glowing-text">Intelli Learn</h1>
       </div>
       <h1>An ethical homework helping AI!</h1>
       <div className="imageContainer">
