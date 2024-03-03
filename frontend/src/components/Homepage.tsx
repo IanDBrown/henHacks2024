@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "../css/App.css";
 import image from "../assets/robot-image.png";
+import { useNavigate } from "react-router-dom";
 
 const Homepage: React.FC = () => {
 	const [fadeIn, setFadeIn] = useState<boolean>(false);
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		setFadeIn(true); // Trigger the fade-in effect when the component mounts
@@ -18,7 +20,7 @@ const Homepage: React.FC = () => {
 			<div className="imageContainer">
 				<img src={image} alt="Image of a green friendly robot" />
 			</div>
-			<button>Take a Quiz!</button>
+			<button onClick={() => navigate("/quiz")}>Take a Quiz!</button>
 		</div>
 	);
 };
