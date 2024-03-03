@@ -8,7 +8,7 @@ body {
 
 .navbar {
 	display: flex;
-	background-color: #677177;
+	background: linear-gradient(to left, #2e3131, #434643);
 	padding: 1rem;
 	justify-content: center;
 	border-bottom: 2px solid limegreen;
@@ -21,11 +21,13 @@ body {
 	text-decoration: none; /* Remove underline from links */
 	margin: 0 1rem; /* Space out the nav items */
 	font-size: 1.2rem; /* Slightly larger font size */
+	font-family: Dm Sans, sans-serif;
+	transition: color 0.2s ease-in-out;
 }
 
 /* Change color on hover for visual feedback */
 .navItem:hover {
-	color: #ddd;
+	color: #61f366;
 }
 
 .homework-helper-text {
