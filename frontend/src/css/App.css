@@ -13,7 +13,7 @@ body {
 	/* border: 1px solid white; */
 	color: white;
 	padding: 10px;
-	margin: 20% 0 0 10%;
+	margin: 15% 0 0 10%;
 	position: absolute;
 }
 
@@ -57,7 +57,6 @@ body {
 	padding: 10px;
 }
 
-<<<<<<<<< Temporary merge branch 1
 .homepage {
 	color: #f4f3f3;
 	font-size: 24px;
@@ -95,48 +94,38 @@ body {
 .about {
 	color: #f4f3f3;
 	font-size: 24px;
-=========
-	.homepage {
-		color: #f4f3f3;
-		font-size: 24px;
-	}
+}
+.homepage {
+	color: #f4f3f3;
+	font-size: 24px;
+}
 
-	body {
-		color: rgb(164, 151, 151);
-	}
+.navbar {
+	display: flex;
+	background-color: #333;
+	padding: 1rem;
+	justify-content: center;
+}
 
-	homepage {
-		color: white;
-	}
+/* Styling for each nav item */
+.nav-item {
+	color: white; /* Light text color for contrast */
+	text-decoration: none; /* Remove underline from links */
+	margin: 0 1rem; /* Space out the nav items */
+	font-size: 1.2rem; /* Slightly larger font size */
+}
 
-	.navbar {
-		display: flex;
-		background-color: #333;
-		padding: 1rem;
-		justify-content: center;
-	}
+/* Change color on hover for visual feedback */
+.nav-item:hover {
+	color: #ddd;
+}
 
-	/* Styling for each nav item */
-	.nav-item {
-		color: white; /* Light text color for contrast */
-		text-decoration: none; /* Remove underline from links */
-		margin: 0 1rem; /* Space out the nav items */
-		font-size: 1.2rem; /* Slightly larger font size */
-	}
+.homework-helper-text {
+	color: #f4f3f3;
+	font-size: 24px;
+}
 
-	/* Change color on hover for visual feedback */
-	.nav-item:hover {
-		color: #ddd;
-	}
-
-	.homework-helper-text {
-		color: #f4f3f3;
-		font-size: 24px;
-	}
-
-	.about {
-		color: #f4f3f3;
-		font-size: 24px;
-	}
->>>>>>>>> Temporary merge branch 2
+.about {
+	color: #f4f3f3;
+	font-size: 24px;
 }
