@@ -1,7 +1,9 @@
 import "../css/QuestionPage.css"
 import math from "../assets/questions.json"
+//import { useNavigate } from 'react-router-dom';
 import { useState } from "react"
-var sum=0;
+//import QuizEndScreen from "./QuizEndScreen";
+var sum=0
 const QuestionPage = () => {
     let selectedAnswer = ""
     const [hiddenClass, sethiddenClass] = useState("hidden");
@@ -11,11 +13,11 @@ const QuestionPage = () => {
     const [randomNumber, setRandomNumber] = useState(0);
     const [questionsAnswered, setQuestionsAnswered] = useState(1);
     const [amountCorrect, setAmountCorrect] = useState(0);
-    
     let allOptions: String = math.Math[scoreLevel][randomNumber].options
     let question: String = math.Math[scoreLevel][randomNumber].Problem;
     let answerArray: Array<string> = allOptions.split(" , ")
     const [rationale, setRationale] = useState(math.Math[scoreLevel][randomNumber].Rationale);
+   // const navigate = useNavigate();
 
     function checkAnswer (){
         sethiddenClass("shown")
@@ -27,11 +29,13 @@ const QuestionPage = () => {
                 setAmountCorrect(amountCorrect + 1)
                 setCorrectOrNot("Correct")
                 sum=sum+1
+                console.log(sum)
             }else{ 
                 setCorrectOrNot("Wrong")     
             }
         }else{
-            window.location.href = "http://localhost:5173/quizResults";
+           window.location.href = "http://localhost:5173/quizResults";
+//           <QuizEndScreen score = {sum}/>
         }
     }
 
@@ -51,13 +55,14 @@ const QuestionPage = () => {
                 setScoreLevel(scoreLevel)
             }
         }
+    //    navigate('/quizResults', { state: { sum } });
 
+        
         setRandomNumber(Math.floor(Math.random() * 5))
         allOptions = math.Math[scoreLevel][randomNumber].options
         question = math.Math[scoreLevel][randomNumber].Problem;
         answerArray = allOptions.split(" , ")
     }
-
     return ( 
         <div className="questionCard">
             <h3>Question {questionsAnswered} of 10</h3>
