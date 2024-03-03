@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../css/App.css";
+import { tailspin } from "ldrs";
+
+tailspin.register();
 
 interface ResponseType {
 	queryresult: {
@@ -78,7 +81,14 @@ const WolframAlphaExample: React.FC = () => {
 						}}
 					/>
 
-					{loading && <h1>LOADING...</h1>}
+					{loading && (
+						<l-tailspin
+							size="40"
+							stroke="5"
+							speed="0.9"
+							color="black"
+						></l-tailspin>
+					)}
 
 					<button
 						type="submit"
