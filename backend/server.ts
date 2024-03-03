@@ -1,14 +1,9 @@
 import express from "express";
-// import dotenv from "dotenv";
-
-// dotenv.config();
 
 // npm start
 
 const app = express();
 const port = 1000;
-
-// import fetch from "node-fetch";
 
 app.get("/", (req, res) => {
 	fetch(
