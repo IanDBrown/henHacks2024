@@ -21,7 +21,8 @@
 }
 
 .contentDisplay img {
-	scale: (1, 1);
+	transform: scale(1.25, 1.25);
+	margin-bottom: 40px;
 }
 
 /* Styles for the header, centers the text and applies font styling */
