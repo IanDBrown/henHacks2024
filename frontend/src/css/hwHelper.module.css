@@ -1,77 +1,64 @@
+/* Adjusts the container of the image to center its contents */
 .helper_css.imageContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
+/* Styles for the header, centers the text and applies font styling */
 .header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
-	font-family: "DM Sans", sans-serif;
+    text-align: center; /* Centers the text */
+    margin-top: 2rem;
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    color: white;
 }
 
+/* Styles for the paragraph, centers the text and applies font styling */
 .para {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
-	font-family: "DM Sans", sans-serif;
+    text-align: center; /* Centers the text */
+    margin-top: 2rem;
+    font-family: "DM Sans", sans-serif;
+    font-size: 25px;
+    color: rgb(241, 237, 237)
 }
 
+/* Styles for the submit button, ensures it's properly sized and clickable */
 .submitButton {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
-	font-family: "DM Sans", sans-serif;
+    display: block; /* Makes the button a block-level element */
+    margin-top: 2rem;
+    margin-left: auto; /* Automatically adjusts the left margin */
+    margin-right: auto; /* Automatically adjusts the right margin */
+    width: 400px; /* Adjust width as needed */
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgb(9, 149, 9);
+    background-color: rgb(28, 87, 28);
+    color: white;
+    font-family: "Noto Sans KR", sans-serif;
+    transition: background-color 0.3s, border 0.3s;
+}
+.submitButton:hover {
+    cursor: pointer;
+    background-color: rgb(30, 117, 30);
+    border: 2px solid lime;
 }
 
-.queryInput {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
-	font-family: "DM Sans", sans-serif;
+.submitButton:active {
+    background-color: rgb(11, 79, 11);
+    border: 2px solid lime;
 }
 
-.helper_css.imageContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
-}
-
-.header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
-	font-family: "DM Sans", sans-serif;
-}
-
-.para {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
-	font-family: "DM Sans", sans-serif;
-}
-
-.submitButton {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
-	font-family: "DM Sans", sans-serif;
-}
-
-.queryInput {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
-	font-family: "DM Sans", sans-serif;
+.queryInput input {
+    width: 80%; /* Adjusts the width to 80% of its parent container */
+    max-width: 1200px; /* Ensures the input doesn't exceed a maximum width */
+    padding: 10px; /* Adds some padding inside the input for text */
+    font-size: 15px; /* Increases font size for better readability */
+    margin: 0 auto; /* Centers the input field and adds margin on top and bottom */
+    display: block; /* Ensures the input field is treated as a block-level element */
+    font-family: Dm Sans, sans-serif;
+    outline: none;
 }
