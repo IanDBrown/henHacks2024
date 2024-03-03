@@ -13,7 +13,7 @@ body {
 	/* border: 1px solid white; */
 	color: white;
 	padding: 10px;
-	margin: 20% 0 0 10%;
+	margin: 15% 0 0 10%;
 	position: absolute;
 }
 
@@ -36,6 +36,24 @@ body {
 .container button {
 	width: 34%;
 	font-size: 17px;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	border: 2px solid rgb(9, 149, 9);
+	background-color: rgb(28, 87, 28);
+	color: white;
+	font-family: "Noto Sans KR", sans-serif;
+	transition: 0.3s;
+}
+
+.container button:hover {
+	cursor: pointer;
+	background-color: rgb(30, 117, 30);
+	border: 2px solid lime;
+	transition: 0.3s;
+}
+
+.container .subjectSelect {
 	padding: 10px;
 }
 
@@ -76,66 +94,38 @@ body {
 .about {
 	color: #f4f3f3;
 	font-size: 24px;
-=======
-	border-radius: 5px;
-	outline: none;
-	border: 2px solid rgb(9, 149, 9);
-	background-color: rgb(28, 87, 28);
-	color: white;
-	font-family: "Noto Sans KR", sans-serif;
-	transition: 0.3s;
+}
+.homepage {
+	color: #f4f3f3;
+	font-size: 24px;
 }
 
-.container button:hover {
-	cursor: pointer;
-	background-color: rgb(30, 117, 30);
-	border: 2px solid lime;
-	transition: 0.3s;
+.navbar {
+	display: flex;
+	background-color: #333;
+	padding: 1rem;
+	justify-content: center;
 }
 
-.container .subjectSelect {
-	padding: 10px;
+/* Styling for each nav item */
+.nav-item {
+	color: white; /* Light text color for contrast */
+	text-decoration: none; /* Remove underline from links */
+	margin: 0 1rem; /* Space out the nav items */
+	font-size: 1.2rem; /* Slightly larger font size */
+}
 
-	.homepage {
-		color: #f4f3f3;
-		font-size: 24px;
-	}
+/* Change color on hover for visual feedback */
+.nav-item:hover {
+	color: #ddd;
+}
 
-	body {
-		color: rgb(164, 151, 151);
-	}
+.homework-helper-text {
+	color: #f4f3f3;
+	font-size: 24px;
+}
 
-	homepage {
-		color: white;
-	}
-
-	.navbar {
-		display: flex;
-		background-color: #333;
-		padding: 1rem;
-		justify-content: center;
-	}
-
-	/* Styling for each nav item */
-	.nav-item {
-		color: white; /* Light text color for contrast */
-		text-decoration: none; /* Remove underline from links */
-		margin: 0 1rem; /* Space out the nav items */
-		font-size: 1.2rem; /* Slightly larger font size */
-	}
-
-	/* Change color on hover for visual feedback */
-	.nav-item:hover {
-		color: #ddd;
-	}
-
-	.homework-helper-text {
-		color: #f4f3f3;
-		font-size: 24px;
-	}
-
-	.about {
-		color: #f4f3f3;
-		font-size: 24px;
-	}
+.about {
+	color: #f4f3f3;
+	font-size: 24px;
 }
