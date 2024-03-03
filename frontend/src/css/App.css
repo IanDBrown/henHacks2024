@@ -129,3 +129,7 @@ body {
 	color: #f4f3f3;
 	font-size: 24px;
 }
+.about h1, .about h2 {
+  text-align: center;
+}
+
