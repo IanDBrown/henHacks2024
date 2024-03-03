@@ -35,4 +35,42 @@
 	align-items: center;
 	margin-top: 2rem;
 	font-family: "DM Sans", sans-serif;
+=======
+.helper_css.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+.submitButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+.queryInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-family: "DM Sans", sans-serif;
 }

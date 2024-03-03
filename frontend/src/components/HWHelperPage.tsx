@@ -6,49 +6,49 @@ import helper_css from "../css/hwHelper.module.css";
 tailspin.register();
 
 interface ResponseType {
-	queryresult: {
-		pods: Array<{
-			subpods: Array<{
-				img: { src: string; alt: string };
-			}>;
-		}>;
-	};
+  queryresult: {
+    pods: Array<{
+      subpods: Array<{
+        img: { src: string; alt: string };
+      }>;
+    }>;
+  };
 }
 
 const WolframAlphaExample: React.FC = () => {
-	const [userQuery, setUserQuery] = useState<string>("");
-	const [result, setResult] = useState<ResponseType | null>(null);
-	const [loading, setLoading] = useState(false);
+  const [userQuery, setUserQuery] = useState<string>("");
+  const [result, setResult] = useState<ResponseType | null>(null);
+  const [loading, setLoading] = useState(false);
 
-	const fetchData = async (query: string) => {
-		const url = "https://api.wolframalpha.com/v2/query";
-		const apiKey = "J42TK3-YV2Y949VRV";
-		const input = encodeURIComponent(query);
+  const fetchData = async (query: string) => {
+    const url = "https://api.wolframalpha.com/v2/query";
+    const apiKey = "J42TK3-YV2Y949VRV";
+    const input = encodeURIComponent(query);
 
-		try {
-			setLoading(true);
+    try {
+      setLoading(true);
 
-			const response = await fetch(
-				`https://cors-anywhere.herokuapp.com/${url}?appid=${apiKey}&input=${input}&output=json`,
-				{ method: "GET" }
-			);
+      const response = await fetch(
+        `https://cors-anywhere.herokuapp.com/${url}?appid=${apiKey}&input=${input}&output=json`,
+        { method: "GET" }
+      );
 
-			if (!response.ok) {
-				throw new Error("Network response was not ok");
-			}
-			const data: ResponseType = await response.json();
-			setResult(data);
-		} catch (error) {
-			console.error("Fetch error:", error);
-		} finally {
-			setLoading(false);
-		}
-	};
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      const data: ResponseType = await response.json();
+      setResult(data);
+    } catch (error) {
+      console.error("Fetch error:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
-	const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-		event.preventDefault();
-		fetchData(userQuery);
-	};
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    fetchData(userQuery);
+  };
 
 	return (
 		<div>
@@ -101,6 +101,5 @@ const WolframAlphaExample: React.FC = () => {
 			</div>
 		</div>
 	);
-};
 
 export default WolframAlphaExample;
