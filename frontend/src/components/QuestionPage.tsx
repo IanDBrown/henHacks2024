@@ -3,70 +3,96 @@ import math from "../assets/questions.json"
 import { useState } from "react"
 
 const QuestionPage = () => {
-    const [selectedAnswer, setSelectedAnswer] = useState("");
+    let selectedAnswer = ""
     const [hiddenClass, sethiddenClass] = useState("hidden");
     const [correctOrNot, setCorrectOrNot] = useState("");
+    const [scoreLevel, setScoreLevel] = useState(2);
+    const [showButton, setShowButton] = useState(true);
+    const [randomNumber, setRandomNumber] = useState(0);
     
-    let scoreLevel : number =2;
-    let allOptions: String = math.Math[scoreLevel][0].options
+    let allOptions: String = math.Math[scoreLevel][randomNumber].options
+    let question: String = math.Math[scoreLevel][randomNumber].Problem;
     let answerArray: Array<string> = allOptions.split(" , ")
-    let rationale : String = math.Math[scoreLevel][0].Rationale
+    const [rationale, setRationale] = useState(math.Math[scoreLevel][randomNumber].Rationale);
 
     function checkAnswer (){
         sethiddenClass("shown")
-        if(selectedAnswer === math.Math[scoreLevel][0].correct){
+        setShowButton(false)
+        setRationale(math.Math[scoreLevel][randomNumber].Rationale)
+        if(selectedAnswer === math.Math[scoreLevel][randomNumber].correct){
             setCorrectOrNot("Correct")
-            scoreLevel += 1
         }else{ 
             setCorrectOrNot("Wrong")     
-            scoreLevel -= 1
         }
+    }
+
+    function nextQuestion(){
+        setShowButton(true)
+        if(correctOrNot === "Correct"){
+            if(scoreLevel < 4){
+                setScoreLevel(scoreLevel + 1)
+            }else{
+                setScoreLevel(scoreLevel)
+            }
+        }else{
+            if(scoreLevel > 1){
+                setScoreLevel(scoreLevel - 1)
+            }else{
+                setScoreLevel(scoreLevel)
+            }
+        }
+
+        setRandomNumber(Math.floor(Math.random() * 5))
+        allOptions = math.Math[scoreLevel][randomNumber].options
+        question = math.Math[scoreLevel][randomNumber].Problem;
+        answerArray = allOptions.split(" , ")
     }
 
     return ( 
         <div className="questionCard">
-            <h1 className="questionHeader">{math.Math[scoreLevel][0].Problem}</h1>
+            <h1 className="questionHeader">{question}</h1>
             <form>
                 <div className="multipleChoiceDiv">
                     <label className="multipleChoiceLabel">
-                    <input className="multipleChoice" type="radio" name="react-tips" value="option1" onChange={()=>setSelectedAnswer("a")}/>
+                    <input className="multipleChoice" type="radio" name="react-tips" value="option1" onChange={()=>selectedAnswer ="a"}/>
                     {answerArray[0]}
                     </label>
                 </div>
 
             <div className="multipleChoiceDiv">
                 <label className="multipleChoiceLabel">
-                    <input className="multipleChoice" type="radio" name="react-tips" value="option2" onChange={()=>setSelectedAnswer("b")}/>
+                    <input className="multipleChoice" type="radio" name="react-tips" value="option2" onChange={()=>selectedAnswer ="b"}/>
                     {answerArray[1]}
                 </label>
             </div>
 
             <div className="multipleChoiceDiv">
                 <label className="multipleChoiceLabel">
-                    <input className="multipleChoice" type="radio" name="react-tips" value="option3" onChange={()=>setSelectedAnswer("c")}/>
+                    <input className="multipleChoice" type="radio" name="react-tips" value="option3" onChange={()=>selectedAnswer ="c"}/>
                     {answerArray[2]}
                 </label> 
             </div>
 
             <div className="multipleChoiceDiv">
                 <label className="multipleChoiceLabel">
-                    <input className="multipleChoice" type="radio" name="react-tips" value="option4" onChange={()=>setSelectedAnswer("d")}/>
+                    <input className="multipleChoice" type="radio" name="react-tips" value="option4" onChange={()=>selectedAnswer ="d"}/>
                     {answerArray[3]}
                 </label> 
             </div>
             <div className="multipleChoiceDiv">
                 <label className="multipleChoiceLabel">
-                    <input className="multipleChoice" type="radio" name="react-tips" value="option5" onChange={()=>setSelectedAnswer("e")}/>
+                    <input className="multipleChoice" type="radio" name="react-tips" value="option5" onChange={()=>selectedAnswer ="e"}/>
                     {answerArray[4]}
                 </label> 
             </div>
             </form>
             <div className={`rationale ${hiddenClass}`} id="rationale">
-                {correctOrNot} <br/>
-                {rationale}
+                {!showButton ? correctOrNot : null} <br/>
+                {!showButton ? rationale : null}
             </div>
             <div>
-                <button className="sumbitButton" onClick={()=>checkAnswer()}>Submit</button>
+                { showButton ? <button className="sumbitButton" onClick={()=>checkAnswer()}>Submit</button> : null }
+                { !showButton ? <button className="sumbitButton" onClick={()=>nextQuestion()}>Next Question</button> : null }
             </div>
         </div>
     )
