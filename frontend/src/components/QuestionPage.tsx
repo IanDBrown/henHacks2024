@@ -2,24 +2,27 @@ import "../css/QuestionPage.css"
 import math from "../assets/questions.json"
 import { useState } from "react"
 
-//comment
 const QuestionPage = () => {
     const [selectedAnswer, setSelectedAnswer] = useState("");
-    let allOptions: String = math.Math.LevelOne[0].options
+    let scoreLevel : number = 2;
+    let allOptions: String = math.Math[scoreLevel][0].options
     let answerArray: Array<string> = allOptions.split(" , ")
-    console.log(answerArray)
+    console.log(math.Math[scoreLevel][0].options)
+    let rationale : String = math.Math[scoreLevel][0].Rationale
 
     function checkAnswer (){
-        if(selectedAnswer === math.Math.LevelOne[0].correct){
+        if(selectedAnswer === math.Math[scoreLevel][0].correct){
             console.log("Correct");
+            scoreLevel += 1
         }else{
             console.log("Wrong");            
+            scoreLevel -= 1
         }
     }
 
     return ( 
         <div className="questionCard">
-            <h1 className="questionHeader">{math.Math.LevelOne[0].Problem}</h1>
+            <h1 className="questionHeader">{math.Math[scoreLevel][0].Problem}</h1>
             <form>
                 <div className="multipleChoiceDiv">
                     <label className="multipleChoiceLabel">
@@ -55,6 +58,9 @@ const QuestionPage = () => {
                 </label> 
             </div>
             </form>
+            <div className="hidden" id="rationale">
+                {rationale}
+            </div>
             <div>
                 <button className="sumbitButton" onClick={()=>checkAnswer()}>Submit</button>
             </div>
