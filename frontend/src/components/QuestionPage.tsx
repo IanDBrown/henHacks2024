@@ -27,6 +27,7 @@ const QuestionPage = () => {
                 setAmountCorrect(amountCorrect + 1)
                 setCorrectOrNot("Correct")
                 sum=sum+1
+                console.log(sum)
             }else{ 
                 setCorrectOrNot("Wrong")     
             }
