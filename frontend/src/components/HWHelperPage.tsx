@@ -44,6 +44,34 @@ const WolframAlphaExample: React.FC = () => {
 			if (!data.queryresult.success) {
 				throw new Error("Wolfram Alpha query was not successful");
 			}
+			const x = data.queryresult.pods.map(x => {
+				console.log(x);
+			});
+
+			const y = data.queryresult.pods.map(x => {
+				if (
+					x.scanner !== "Numeric" ||
+					x.scanner !== "Integer" ||
+					x.scanner !== "Identity" ||
+					x.scanner !== "Simplification" ||
+					x.scanner !== "NumberLine" ||
+					x.scanner !== "Rational" ||
+					x.scanner !== "ContinuedFraction"
+				) {
+					("n/a");
+				}
+			});
+
+			console.log(y.includes("n/a"));
+			// const x = data.queryresult.pods.map(x => {
+			// 	if (x.title === "Network information" || x.title === "Upper case") {
+			// 		return "n/a";
+			// 	}
+			// });
+
+			// console.log(x.includes("n/a"));
+
+			// console.log(data.queryresult);
 
 			setResult(data);
 		} catch (error) {
